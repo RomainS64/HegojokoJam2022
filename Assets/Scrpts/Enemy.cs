@@ -12,14 +12,23 @@ public class Enemy : MonoBehaviour
 
     public string tagTarget = "Player";
 
+    //TODO  : C'EST LE TRUC QUI DEFINI SI LE NOUNOURS VOLE OU PAS
+    public bool isFlying = false;
+
     public float speed;
     public float timeBetweenAttacks;
     public int damage;
+
+    private SpriteRenderer spriteRenderer;
+    public EveryNounoursColors everyNounoursColors;
     //Elles sont publiques car elles ont besoin d'être utilisée dans d'autres scrits/sous-classes
 
     public virtual void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+       // player = GameObject.FindGameObjectWithTag("Player").transform;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        SetRandomSpriteColor();
     }
 
     public void TakeDamage(int damageAmount)
@@ -37,5 +46,19 @@ public class Enemy : MonoBehaviour
 
             Destroy(gameObject);
         }
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            SetRandomSpriteColor();
+        }
+    }
+
+    public void SetRandomSpriteColor()
+    {
+        Color newColor = everyNounoursColors.allColors[Random.Range(0, everyNounoursColors.allColors.Length)];
+        spriteRenderer.color = new Color(newColor.r, newColor.g, newColor.b, 255);
     }
 }

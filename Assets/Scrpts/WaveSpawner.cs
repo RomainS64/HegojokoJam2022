@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,17 +8,20 @@ using UnityEngine.UI;
 public class WaveSpawner : MonoBehaviour
 {
     [System.Serializable]
-    public class Wave
+    public class EnemyAndSpawnParameters
     {
-        /*Dans le tableau d'ennemies, on a
-         * col1 : le type de l'ennemie présent dans le tableau
-         *col 2 : le nombre d'ennemie
-        */
-        public Enemy[] enemies;//Contient tous les enemies qui spawneront dans la wave
-        public float timeBetweenSpawns;
+        public Enemy typeOfEnemy;
+        public int numberOfEnemies;
     }
 
-    public Animator canvasAnimator;
+    [System.Serializable]
+    public class Wave
+    {
+        public EnemyAndSpawnParameters[] enemiesAndSpawnParameters;
+        public Vector2 minMaxTimeBetweenSpawns;
+        public float timeBeforeStartingWave;
+        public bool isScrolling;
+    }
 
     public int waveIndexToStart = 0;
 
@@ -25,8 +29,9 @@ public class WaveSpawner : MonoBehaviour
     public GameObject gameManager;
 
     public Wave[] waves;
-    public Transform[] spawnPoints;//Tableau contenant tous les points de spawn possible
-    public float timeBetweenWaves;
+    public Transform[] spawnPointsRight;
+    public Transform[] spawnPointsLeft;
+    public Transform[] spawnPointsUp;
 
     private Wave currentWave;
     private int currentWaveIndex;//INDEX = INDICE
@@ -34,51 +39,49 @@ public class WaveSpawner : MonoBehaviour
 
     private bool finishedSpawning;
 
-
     private void Start()
     {
         //AudioManager.instance.PlaySound("musicGame");
 
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        //player = GameObject.FindGameObjectWithTag("Player").transform;
         currentWaveIndex = waveIndexToStart;
-
         waveInformationText.text = "Wave n°" + (currentWaveIndex+1);
-        
+    }
 
-        //Commencer la première vague de monstres
+    public void StartFirstWave()
+    {
         StartCoroutine(StartNextWave(currentWaveIndex));
     }
 
-    IEnumerator StartNextWave(int index)
+    private IEnumerator StartNextWave(int index)
     {//On attend timeBetweenWaves secondes, puis on lance une vague
-        yield return new WaitForSeconds(timeBetweenWaves);
+        currentWave = waves[index];//Le vague courante est celle désignée par currentWaveIndex
+
+        yield return new WaitForSeconds(currentWave.timeBeforeStartingWave);
         StartCoroutine(SpawnWave(index));
     }
 
-    IEnumerator SpawnWave(int index)
+    private IEnumerator SpawnWave(int index)
     {
-        currentWave = waves[index];//Le vague courante est celle désignée par currentWaveIndex
+        //Récupérer tous les ennmis dans une liste.
+        List<Enemy> enemies = GetAllEnemiesOfCurrentWave();
+        int totalOfEnemiesOfCurrentWave = enemies.Count;
 
-        for(int i = 0; i < currentWave.enemies.Length ; i++)
+        for (int i = 0; i < totalOfEnemiesOfCurrentWave ; i++)
         {
             if(player == null)
             {//S'il est mort, on arrête de spawn de monstres
                 yield break;
             }
+            
+            Enemy randomEnemy = enemies[UnityEngine.Random.Range(0, enemies.Count)];
+            enemies.RemoveAt(i);
 
-            //On sélectionne un ennemie aléatoirement dans le tableau wave puis on le place aléatoirement dans la map
-
-            /*Gestion du nombre d'ennemies dans une wave
-             S'il*/
- 
-            //currentEnemy -> l'ennemi courant lors du parcours du tableau
-            Enemy currentEnemy = currentWave.enemies[i];
-            Transform randomSpot = spawnPoints[Random.Range(0, spawnPoints.Length)];
-            Instantiate(currentEnemy, randomSpot.position, randomSpot.rotation);
+            Transform randomSpotToSpawn = GetRandomSpawnPoint(enemies[UnityEngine.Random.Range(0, enemies.Count)]);
+            Instantiate(randomEnemy, randomSpotToSpawn.position, randomSpotToSpawn.rotation);
 
             //Détection de la fin de la vague
-            if(i == currentWave.enemies.Length - 1)
+            if(i == totalOfEnemiesOfCurrentWave - 1)
             {
                 finishedSpawning = true;
             }
@@ -86,33 +89,73 @@ public class WaveSpawner : MonoBehaviour
             {
                 finishedSpawning = false;
             }
+
             //Attendre le temps qu'il faut entre chaque spawn de monstre
-            yield return new WaitForSeconds(currentWave.timeBetweenSpawns);
+            yield return new WaitForSeconds(UnityEngine.Random.Range(currentWave.minMaxTimeBetweenSpawns.x, currentWave.minMaxTimeBetweenSpawns.y));
         }
     }
 
     private void Update()
     {
-        if (finishedSpawning == true && GameObject.FindGameObjectsWithTag("Mob").Length == 0)
+        if (finishedSpawning == true && GameObject.FindGameObjectsWithTag("Nounours").Length == 0)
         {
             finishedSpawning = false;//Si on a finit la vague, on setup la suivante
             if(currentWaveIndex + 1 < waves.Length)//S'il y a encore une vague/des vagues
             {
-                currentWaveIndex++;
-                waveInformationText.text = "Wave n°" + (currentWaveIndex+1);
-                canvasAnimator.SetTrigger("TextBlop");
-                Debug.Log("La vague " + (currentWaveIndex + 1) + " va commencer...");
+                PrepareNextWave();
                 StartCoroutine(StartNextWave(currentWaveIndex));
             }
             else//S'il n'y en a plus
             {
-                GameObject vieJoueur = GameObject.FindGameObjectWithTag("Player");
-                GameObject vieTour = GameObject.FindGameObjectWithTag("Tower");
-                //if (vieJoueur.GetComponent<HeartSystem>().life > 0 && vieTour.GetComponent<HeartSystem>().life > 0)
-                //{
-                //    gameManager.GetComponent<scr_SceneManager>().LoadWin();
-                //}
+                Debug.Log("gg la street t'as gagné");
             }
         }
+    }
+
+    private void PrepareNextWave()
+    {
+        currentWaveIndex++;
+        waveInformationText.text = "Wave n°" + (currentWaveIndex + 1);
+        Debug.Log("La vague " + (currentWaveIndex + 1) + " va commencer...");
+    }
+
+    private Transform GetRandomSpawnPoint(Enemy enemyToSpawn)
+    {
+        if (enemyToSpawn.isFlying)
+        {//FLYING ENEMIES ARE SURE FLYING SO THEY SPAWN IN THE SKY
+            return spawnPointsUp[UnityEngine.Random.Range(0, spawnPointsUp.Length)];
+        }
+
+        if (currentWave.isScrolling)
+        {//SPAWN RIGHT BECAUSE ENEMIES CANT SPAWN ON THE RIGHT
+            return spawnPointsRight[UnityEngine.Random.Range(0, spawnPointsRight.Length)];
+        }
+        else
+        {
+            int randomSide = UnityEngine.Random.Range(1, 3);
+            if(randomSide == 1)
+            {//SPAWN RIGHT
+                return spawnPointsRight[UnityEngine.Random.Range(0, spawnPointsRight.Length)];
+            }
+            else
+            {//SPAWN LEFT
+                return spawnPointsLeft[UnityEngine.Random.Range(0, spawnPointsLeft.Length)];
+            }
+        }
+    }
+
+    private List<Enemy> GetAllEnemiesOfCurrentWave()
+    {
+        List<Enemy> enemies = new List<Enemy>();
+
+        foreach (var enemiesAndSpawnParameters in currentWave.enemiesAndSpawnParameters)
+        {
+            for (int i = 0; i < enemiesAndSpawnParameters.numberOfEnemies; i++)
+            {
+                enemies.Add(enemiesAndSpawnParameters.typeOfEnemy);
+            }
+        }
+
+        return enemies;
     }
 }
