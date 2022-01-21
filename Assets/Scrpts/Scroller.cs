@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class Scroller : MonoBehaviour
 {
-    public bool IsScrolling{get;set;}
+    [HideInInspector] public bool IsScrolling{get;set;}
+
+    [SerializeField] private Transform[] leftPoints;
+    [SerializeField] private Transform[] rightPoints;
+    [SerializeField] private Transform[] skyPoints;
+    private void Start()
+    {
+        IsScrolling = true;
+    }
     public Transform[] getLeftSpawnPoint()
     {
-        return null;
+        return leftPoints;
     }
     public Transform[] getRightSpawnPoint()
     {
-        return null;
+        return rightPoints;
     }
     public Transform[] getSkySpawnPoint()
     {
-        return null;
+        return skyPoints;
     }
 
 }
