@@ -5,7 +5,7 @@ using UnityEngine;
 public class Scroller : MonoBehaviour
 {
     public bool IsScrolling{get;set;}
-    public Transform[] getAllSpawnPoint()
+    public Transform[] getLeftSpawnPoint()
     {
         return null;
     }
@@ -13,5 +13,9 @@ public class Scroller : MonoBehaviour
     {
         return null;
     }
-  
+    public Transform[] getSkySpawnPoint()
+    {
+        return null;
+    }
+
 }
