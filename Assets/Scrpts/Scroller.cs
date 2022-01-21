@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Scroller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool IsScrolling{get;set;}
+    public Transform[] getAllSpawnPoint()
     {
-        
+        return null;
     }
-
-    // Update is called once per frame
-    void Update()
+    public Transform[] getRightSpawnPoint()
     {
-        
+        return null;
     }
+  
 }
