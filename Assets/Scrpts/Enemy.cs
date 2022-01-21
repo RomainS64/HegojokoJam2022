@@ -48,14 +48,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            SetRandomSpriteColor();
-        }
-    }
-
     public void SetRandomSpriteColor()
     {
         Color newColor = everyNounoursColors.allColors[Random.Range(0, everyNounoursColors.allColors.Length)];
