@@ -26,26 +26,25 @@ public class WaveSpawner : MonoBehaviour
     public int waveIndexToStart = 0;
 
     public Text waveInformationText;
-    public GameObject gameManager;
+    private GameObject gameManager;
 
     public Wave[] waves;
-    public Transform[] spawnPointsRight;
-    public Transform[] spawnPointsLeft;
-    public Transform[] spawnPointsUp;
 
     private Wave currentWave;
     private int currentWaveIndex;//INDEX = INDICE
     private Transform player;
 
+    private Scroller scroller;
+
     private bool finishedSpawning;
 
     private void Start()
     {
-        //AudioManager.instance.PlaySound("musicGame");
-
-        //player = GameObject.FindGameObjectWithTag("Player").transform;
+        //gameManager = GameObject.FindObjectOfType(GameManager);
         currentWaveIndex = waveIndexToStart;
         waveInformationText.text = "Wave n°" + (currentWaveIndex+1);
+
+        scroller = FindObjectOfType<Scroller>();
     }
 
     public void StartFirstWave()
@@ -123,23 +122,23 @@ public class WaveSpawner : MonoBehaviour
     {
         if (enemyToSpawn.isFlying)
         {//FLYING ENEMIES ARE SURE FLYING SO THEY SPAWN IN THE SKY
-            return spawnPointsUp[UnityEngine.Random.Range(0, spawnPointsUp.Length)];
+            return scroller.GetSkySpawnPoint()[UnityEngine.Random.Range(0, scroller.GetSkySpawnPoint().Length)];
         }
 
         if (currentWave.isScrolling)
         {//SPAWN RIGHT BECAUSE ENEMIES CANT SPAWN ON THE RIGHT
-            return spawnPointsRight[UnityEngine.Random.Range(0, spawnPointsRight.Length)];
+            return scroller.GetRightSpawnPoint()[UnityEngine.Random.Range(0, scroller.GetRightSpawnPoint().Length)];
         }
         else
         {
             int randomSide = UnityEngine.Random.Range(1, 3);
             if(randomSide == 1)
             {//SPAWN RIGHT
-                return spawnPointsRight[UnityEngine.Random.Range(0, spawnPointsRight.Length)];
+                return scroller.GetRightSpawnPoint()[UnityEngine.Random.Range(0, scroller.GetRightSpawnPoint().Length)];
             }
             else
             {//SPAWN LEFT
-                return spawnPointsLeft[UnityEngine.Random.Range(0, spawnPointsLeft.Length)];
+                return scroller.GetLeftSpawnPoint()[UnityEngine.Random.Range(0, scroller.GetLeftSpawnPoint().Length)];
             }
         }
     }
