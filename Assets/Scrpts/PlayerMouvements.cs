@@ -27,7 +27,7 @@ public class PlayerMouvements : MonoBehaviour
             vertical = 0;
         }
 
-        Vector2 newVelocity = new Vector2(horizontal,vertical);
+        Vector2 newVelocity = new Vector2(horizontal*speedX,vertical*speedY);
         rb.velocity = newVelocity;
     }
 }
