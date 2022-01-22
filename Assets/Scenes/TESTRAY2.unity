@@ -243,19 +243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86ff89ecc5c85e489bbdf0f30597cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: ff871fcf947cd084a9170b27a5a41a01, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &1029408437
 Transform:
   m_ObjectHideFlags: 0
@@ -277,6 +264,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 911103388, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 911103388, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6103705171701696162, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -409,8 +404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f6cbbf4e1a5604d80fb5db0d762c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!20 &1299554329
 Camera:
   m_ObjectHideFlags: 0
@@ -480,16 +473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9befc2ae2af9f3f4880e26b8a94b3c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!114 &1299554332
 MonoBehaviour:
   m_ObjectHideFlags: 0
