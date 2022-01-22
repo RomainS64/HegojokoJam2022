@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	138404804	playGunSound			\Default Work Unit\playGunSound	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	999528939	gunSound	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\tir1_5E65B236.wem		\Actor-Mixer Hierarchy\Default Work Unit\gunSound		80268
-
