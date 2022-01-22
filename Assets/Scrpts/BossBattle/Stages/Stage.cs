@@ -19,7 +19,8 @@ public class Stage : MonoBehaviour
 
     protected Zemar zemar;
 
-    private void Start()
+
+    protected virtual void Start()
     {
         zemar = FindObjectOfType<Zemar>();
     }

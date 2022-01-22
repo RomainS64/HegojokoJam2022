@@ -15,6 +15,11 @@ public class StageMoveAround : Stage
     private int numDeplacements;
     private bool isRightSide;
 
+    private void Start()
+    {
+        base.Start();
+    }
+
     public override void OnStageStart()
     {
         isRightSide = true;
