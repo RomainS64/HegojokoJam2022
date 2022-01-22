@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     public float timeBetweenAttacks;
     public int damage;
 
-    public SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer,spriteDesYeux;
     public EveryNounoursColors everyNounoursColors;
     //Elles sont publiques car elles ont besoin d'être utilisée dans d'autres scrits/sous-classes
 
@@ -31,8 +31,16 @@ public class Enemy : MonoBehaviour
         while (true)
         {
             Vector3 dir = (target.position- transform.position).normalized;
-            if (dir.x>0) spriteRenderer.flipX = false;
-            else if (dir.x<0) spriteRenderer.flipX = true;
+            if (dir.x > 0)
+            {
+                spriteRenderer.flipX = false;
+                spriteDesYeux.flipX = false;
+            }
+            else if (dir.x < 0)
+            {
+                spriteDesYeux.flipX = true;
+                spriteRenderer.flipX = true;
+            }
             transform.Translate(dir * speed/500);
             yield return new WaitForFixedUpdate();
         }

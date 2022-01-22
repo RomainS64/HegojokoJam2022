@@ -39,12 +39,13 @@ public class Health : MonoBehaviour
 
         healthBar.value = curHealth;
     }
-   
+
     //heal player
     public void HealPlayer (int healValue)
     {
         curHealth += healValue;
 
         healthBar.value = curHealth;
+
     }
 }

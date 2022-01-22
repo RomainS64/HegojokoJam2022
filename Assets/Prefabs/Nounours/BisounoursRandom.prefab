@@ -53,6 +53,7 @@ MonoBehaviour:
   timeBetweenAttacks: 0
   damage: 0
   spriteRenderer: {fileID: 4795028836251529916}
+  spriteDesYeux: {fileID: 2545934335186315452}
   everyNounoursColors: {fileID: 11400000, guid: 5e648b9f6d031be4983726d3117520e3, type: 2}
 --- !u!61 &8071070013875111759
 BoxCollider2D:
