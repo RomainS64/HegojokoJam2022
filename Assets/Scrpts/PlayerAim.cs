@@ -18,6 +18,8 @@ public class PlayerAim : MonoBehaviour
     void Update()
     {
         Vector2 Point_1 = camera.ScreenToWorldPoint(Input.mousePosition);
+        Debug.Log("Point 1: " + Point_1);
+        Debug.Log("Mp: " + Input.mousePosition);
         Vector2 Point_2 = transfArm.position;
         float aimAngle = Mathf.Atan2(Point_2.y - Point_1.y, Point_2.x - Point_1.x) * 180 / Mathf.PI;
         Debug.Log(aimAngle);
