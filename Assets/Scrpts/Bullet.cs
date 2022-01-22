@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 
-    [SerializeField] private float speed = 1f;
+    [SerializeField] private float speed;
     public void ShootBullet(Vector3 position, Quaternion rotation, Vector3 dir)
     {
         
@@ -18,10 +18,10 @@ public class Bullet : MonoBehaviour
 
     IEnumerator moveBullet(Vector3 direction)
     {
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 1000; i++)
         {
-            yield return new WaitForSeconds(5/100);
             transform.position += direction * speed/10;
+            yield return new WaitForSeconds(5f/1000);
         }
         Destroy(gameObject);
     }
