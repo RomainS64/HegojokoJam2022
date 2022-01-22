@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Zemar : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class Zemar : MonoBehaviour
     private Animator animator;
     private Vector2 pointToMoveOn;
     private float zemarSpeed;
+
+    public event EventHandler OnBulletHitsEvent;
+    private bool isAmongClones;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +58,11 @@ public class Zemar : MonoBehaviour
         zemarSpeed = speed;
     }
 
+    public void MoveAndTraversePlayer(float traversingMultiplier, float speed)
+    {
+        pointToMoveOn = player.transform.position * traversingMultiplier;
+        zemarSpeed = speed;
+    }
     public void MoveToDefaultPosition(float speed = speedAppearFromRightSide)
     {
         pointToMoveOn = defaultPosition.position;
@@ -79,5 +88,26 @@ public class Zemar : MonoBehaviour
     public void TriggerDedoublementAnimation()
     {
         animator.SetTrigger("Dedoublement");
+    }
+
+    public void SetIsAmongClones(bool pIsAmongClones)
+    {
+        isAmongClones = pIsAmongClones;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Bullet"))
+        {
+            if(isAmongClones)
+            {
+                isAmongClones = false;
+                if (OnBulletHitsEvent != null) OnBulletHitsEvent(this, EventArgs.Empty);
+            }
+            else
+            {
+                Debug.Log("Oulala je prend des degats");
+            }
+        }
     }
 }
