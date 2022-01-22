@@ -17,6 +17,10 @@ public class StageNounoursRain : Stage
     public Transform[] pointSpawnNounours;
     private int numSpawns;
 
+    private void Start()
+    {
+        base.Start();
+    }
     public override void OnStageStart()
     {
         zemar.canMakeDamage = false;
