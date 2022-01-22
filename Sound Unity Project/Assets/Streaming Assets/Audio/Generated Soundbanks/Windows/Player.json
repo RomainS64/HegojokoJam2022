@@ -1,0 +1,26 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\",
+   "SourceFilesRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\.cache\\Windows\\",
+   "SoundBanksRoot": "F:\\devJeux\\HegoJokoWinterJam\\ZemmarEtLeGatoAlaFraiz\\Sound Unity Project\\Assets\\Streaming Assets\\Audio\\Generated Soundbanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1069431850",
+    "GUID": "{9A3FD47A-39E4-4D02-A594-2643084AE054}",
+    "Language": "SFX",
+    "Hash": "2983729342",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
+    "ShortName": "Player",
+    "Path": "Player.bnk"
+   }
+  ]
+ }
+}
