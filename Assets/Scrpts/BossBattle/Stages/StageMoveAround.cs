@@ -60,7 +60,7 @@ public class StageMoveAround : Stage
 
     private IEnumerator MoveBackToDefaultPosition()
     {
-        zemar.AppearFromRightSide(speedZemarDeplacement);
+        zemar.MoveToDefaultPosition(speedZemarDeplacement);
 
         yield return new WaitForSeconds(durationToNextDeplacement);
         OnStageEnd();

@@ -22,6 +22,7 @@ public class Zemar : MonoBehaviour
     {
         pointToMoveOn = transform.position;
         zemarSpeed = 0;
+        transform.position = defaultPosition.position;
     }
 
     // Update is called once per frame
@@ -37,7 +38,7 @@ public class Zemar : MonoBehaviour
         zemarSpeed = speed;
     }
 
-    public void MoveToDefaultPosition(float speed)
+    public void MoveToDefaultPosition(float speed = speedAppearFromRightSide)
     {
         pointToMoveOn = defaultPosition.position;
         zemarSpeed = speed;

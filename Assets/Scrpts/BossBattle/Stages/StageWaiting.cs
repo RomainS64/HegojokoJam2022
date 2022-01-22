@@ -9,6 +9,7 @@ public class StageWaiting : Stage
     public override void OnStageStart()
     {
         zemar.canMakeDamage = false;
+        zemar.MoveToDefaultPosition();
 
         base.OnStageStart();
     }
