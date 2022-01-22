@@ -13,41 +13,52 @@ public class Stage : MonoBehaviour
     }
 
     public string stageName = "No named stage";
-    public StateStage currentState;
+
+    private StateStage currentState;
     public event EventHandler OnStageEndingEvent;
-    public void OnStageStart()
+
+    protected Zemar zemar;
+
+    private void Start()
+    {
+        zemar = FindObjectOfType<Zemar>();
+    }
+
+    public virtual void OnStageStart()
     {
         currentState = StateStage.STARTING;
-        Debug.Log("On start");
+
+        Debug.Log("On start : " + stageName);
+
         OnStageRunning();
     }
 
-    public void OnStageRunning()
+    public virtual void OnStageRunning()
     {
         currentState = StateStage.RUNNING;
+
+        Debug.Log("On Running : " + stageName);
 
         MakeActions();
     }
 
-    public void OnStageEnd()
+    public virtual void OnStageEnd()
     {
         currentState = StateStage.ENDING;
 
-        Debug.Log("On End");
+        Debug.Log("On End : " + stageName);
 
         if (OnStageEndingEvent != null) OnStageEndingEvent(this, EventArgs.Empty);
     }
 
-    public void MakeActions()
+    public virtual void MakeActions()
     {
-        Debug.Log("Doing some action");
         StartCoroutine(LaunchNewStageTimer());
     }
 
     private IEnumerator LaunchNewStageTimer()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         OnStageEnd();
-
     }
 }
