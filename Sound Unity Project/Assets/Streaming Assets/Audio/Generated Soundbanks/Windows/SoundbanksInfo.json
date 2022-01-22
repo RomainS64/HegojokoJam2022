@@ -16,6 +16,34 @@
   "MediaFilesNotInAnyBank": [],
   "SoundBanks": [
    {
+    "Id": "1069431850",
+    "GUID": "{9A3FD47A-39E4-4D02-A594-2643084AE054}",
+    "Language": "SFX",
+    "Hash": "4089291436",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
+    "ShortName": "Player",
+    "Path": "Player.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "138404804",
+      "Name": "playGunSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\playGunSound",
+      "GUID": "{4F550D97-B308-4296-B184-14E8D5D41C2D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.45429",
+      "DurationMax": "0.45429",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "999528939",
+        "Language": "SFX",
+        "ShortName": "tir1.wav",
+        "Path": "SFX\\tir1_5E65B236.wem"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
