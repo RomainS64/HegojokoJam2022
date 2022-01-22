@@ -55,8 +55,8 @@ public class PlayerMouvements : MonoBehaviour
         rb.velocity = newVelocity;
         if (rb.velocity.x != 0 || rb.velocity.y != 0)
         {
+            AkSoundEngine.PostEvent("playWalk", gameObject);
             animator.SetBool("isMoving", true);
-            Debug.Log($"Velocité : {rb.velocity}");
             if (rb.velocity.x > 0)
             {
                 spriteFeet.flipX = false;
