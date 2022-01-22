@@ -5,7 +5,6 @@ using UnityEngine;
 public class Zemar : MonoBehaviour
 {
     public Transform defaultPosition;
-    public PlayerMouvements player;
 
     public const float speedAppearFromRightSide = 1.2f;
     public Transform positionToAppearFromRightSide;
@@ -15,36 +14,22 @@ public class Zemar : MonoBehaviour
     public float currentDamageToPlayer = 10;
     public bool canMakeDamage = false;
 
-    private Animator animator;
     private Vector2 pointToMoveOn;
     private float zemarSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
-        player = FindObjectOfType<PlayerMouvements>();
-
         pointToMoveOn = transform.position;
         zemarSpeed = 0;
         transform.position = defaultPosition.position;
-
-        ToggleLevitateAnimation(true);
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, pointToMoveOn, zemarSpeed * Time.deltaTime);
-
-        if(player.transform.position.x < transform.position.x)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-        }
+        //Vector2.MoveTowards(transform.position, pointToMoveOn, zemarSpeed * Time.deltaTime);
     }
 
     public void Move(Vector2 endPoint, float speed)
@@ -68,10 +53,5 @@ public class Zemar : MonoBehaviour
     public void SetSpriteLookRight(bool lookRight)
     {
         spriteRenderer.flipX = lookRight;
-    }
-
-    public void ToggleLevitateAnimation(bool isLevitating)
-    {
-        animator.SetBool("isLevitating", isLevitating);
     }
 }
