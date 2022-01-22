@@ -20,16 +20,51 @@
 				<Event Id="2304268690" Name="playZemmarLaugh" ObjectPath="\Events\Default Work Unit\playZemmarLaugh" GUID="{CB19B79A-BAB9-4099-A136-75FACF0B1D21}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="692772953" GUID="{540281BB-D6A5-494F-86C0-4509CDDBF508}" Language="SFX">
+		<SoundBank Id="692772953" GUID="{540281BB-D6A5-494F-86C0-4509CDDBF508}" Language="SFX" Hash="2229329850">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ennemi</ObjectPath>
 			<ShortName>Ennemi</ShortName>
 			<Path>Ennemi.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1155634196" Name="playBisounoursDeath" ObjectPath="\Events\Default Work Unit\playBisounoursDeath" GUID="{364B857B-7F85-4C36-8F1F-631F7B062EF1}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1155634196" Name="playBisounoursDeath" ObjectPath="\Events\Default Work Unit\playBisounoursDeath" GUID="{364B857B-7F85-4C36-8F1F-631F7B062EF1}" DurationType="OneShot" DurationMin="1.156242" DurationMax="1.635173">
+					<IncludedMemoryFiles>
+						<File Id="69483760" Language="SFX">
+							<ShortName>dmg\dmg2.wav</ShortName>
+							<Path>SFX\dmg\dmg2_10C4C929.wem</Path>
+						</File>
+						<File Id="142054616" Language="SFX">
+							<ShortName>dmg\dmg1.wav</ShortName>
+							<Path>SFX\dmg\dmg1_10C4C929.wem</Path>
+						</File>
+						<File Id="395857831" Language="SFX">
+							<ShortName>dmg\dmg3.wav</ShortName>
+							<Path>SFX\dmg\dmg3_10C4C929.wem</Path>
+						</File>
+						<File Id="403386253" Language="SFX">
+							<ShortName>dmg\dmg5.wav</ShortName>
+							<Path>SFX\dmg\dmg5_10C4C929.wem</Path>
+						</File>
+						<File Id="575151574" Language="SFX">
+							<ShortName>dmg\dmg4.wav</ShortName>
+							<Path>SFX\dmg\dmg4_10C4C929.wem</Path>
+						</File>
+						<File Id="670784540" Language="SFX">
+							<ShortName>dmg\dmg7.wav</ShortName>
+							<Path>SFX\dmg\dmg7_10C4C929.wem</Path>
+						</File>
+						<File Id="842634065" Language="SFX">
+							<ShortName>pooof.wav</ShortName>
+							<Path>SFX\pooof_10C4C929.wem</Path>
+						</File>
+						<File Id="936784964" Language="SFX">
+							<ShortName>dmg\dmg6.wav</ShortName>
+							<Path>SFX\dmg\dmg6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3093616831" Name="playPlane" ObjectPath="\Events\Default Work Unit\playPlane" GUID="{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="518130299">
+		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="3488054681">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -45,7 +80,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3591998379" Name="playPunchline" ObjectPath="\Events\Default Work Unit\playPunchline" GUID="{B48BA2C0-E7BA-42CE-AE2C-9C935DD9AC3B}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2097335752" Name="playWalk" ObjectPath="\Events\Default Work Unit\playWalk" GUID="{F56F8950-8C4A-40A5-A6F7-A2E130CF0115}" DurationType="OneShot" DurationMin="0.193108" DurationMax="0.33622">
+				<Event Id="2097335752" Name="playWalk" ObjectPath="\Events\Default Work Unit\playWalk" GUID="{F56F8950-8C4A-40A5-A6F7-A2E130CF0115}" DurationType="OneShot" DurationMin="1.255" DurationMax="1.255">
 					<IncludedMemoryFiles>
 						<File Id="543468535" Language="SFX">
 							<ShortName>footstep.wav</ShortName>
@@ -55,17 +90,24 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1958929096">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2691871305">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" GUID="{B5E8FC2F-A85A-4F28-8388-0E98301AB755}" Language="SFX">
+		<SoundBank Id="1551306167" GUID="{B5E8FC2F-A85A-4F28-8388-0E98301AB755}" Language="SFX" Hash="886477457">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1843531235" Name="playButton" ObjectPath="\Events\Default Work Unit\playButton" GUID="{BFC971D7-3BFD-4346-8B00-AAF291529611}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1843531235" Name="playButton" ObjectPath="\Events\Default Work Unit\playButton" GUID="{BFC971D7-3BFD-4346-8B00-AAF291529611}" DurationType="OneShot" DurationMin="0.401916" DurationMax="0.401916">
+					<IncludedMemoryFiles>
+						<File Id="647900629" Language="SFX">
+							<ShortName>button.wav</ShortName>
+							<Path>SFX\button_C34E0745.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="2609808943" GUID="{130EF232-2122-428E-A60F-98C11E5BEAAD}" Language="SFX">

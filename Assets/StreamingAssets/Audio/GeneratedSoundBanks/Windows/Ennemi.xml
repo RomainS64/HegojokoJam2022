@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\</ProjectRoot>
+		<SourceFilesRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\devJeux\HegoJokoWinterJam\ZemmarEtLeGatoAlaFraiz\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="692772953" GUID="{540281BB-D6A5-494F-86C0-4509CDDBF508}" Language="SFX" Hash="2229329850">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ennemi</ObjectPath>
+			<ShortName>Ennemi</ShortName>
+			<Path>Ennemi.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1155634196" Name="playBisounoursDeath" ObjectPath="\Events\Default Work Unit\playBisounoursDeath" GUID="{364B857B-7F85-4C36-8F1F-631F7B062EF1}" DurationType="OneShot" DurationMin="1.156242" DurationMax="1.635173">
+					<IncludedMemoryFiles>
+						<File Id="69483760" Language="SFX">
+							<ShortName>dmg\dmg2.wav</ShortName>
+							<Path>SFX\dmg\dmg2_10C4C929.wem</Path>
+						</File>
+						<File Id="142054616" Language="SFX">
+							<ShortName>dmg\dmg1.wav</ShortName>
+							<Path>SFX\dmg\dmg1_10C4C929.wem</Path>
+						</File>
+						<File Id="395857831" Language="SFX">
+							<ShortName>dmg\dmg3.wav</ShortName>
+							<Path>SFX\dmg\dmg3_10C4C929.wem</Path>
+						</File>
+						<File Id="403386253" Language="SFX">
+							<ShortName>dmg\dmg5.wav</ShortName>
+							<Path>SFX\dmg\dmg5_10C4C929.wem</Path>
+						</File>
+						<File Id="575151574" Language="SFX">
+							<ShortName>dmg\dmg4.wav</ShortName>
+							<Path>SFX\dmg\dmg4_10C4C929.wem</Path>
+						</File>
+						<File Id="670784540" Language="SFX">
+							<ShortName>dmg\dmg7.wav</ShortName>
+							<Path>SFX\dmg\dmg7_10C4C929.wem</Path>
+						</File>
+						<File Id="842634065" Language="SFX">
+							<ShortName>pooof.wav</ShortName>
+							<Path>SFX\pooof_10C4C929.wem</Path>
+						</File>
+						<File Id="936784964" Language="SFX">
+							<ShortName>dmg\dmg6.wav</ShortName>
+							<Path>SFX\dmg\dmg6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3093616831" Name="playPlane" ObjectPath="\Events\Default Work Unit\playPlane" GUID="{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
