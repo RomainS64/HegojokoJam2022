@@ -133,9 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 122253726}
   - component: {fileID: 122253725}
+  - component: {fileID: 122253728}
   - component: {fileID: 122253727}
   - component: {fileID: 122253724}
-  - component: {fileID: 122253728}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -152,11 +152,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 122253723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8f6cbbf4e1a5604d80fb5db0d762c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: cfad98f50a677e3479e47f0e025cf285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4e73f91c700926f4088ac25ffe9a493d, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!20 &122253725
 Camera:
   m_ObjectHideFlags: 0
@@ -223,7 +233,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 122253723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9befc2ae2af9f3f4880e26b8a94b3c37, type: 3}
+  m_Script: {fileID: 11500000, guid: 317c28c5e21ee2c40b5fcee18a7337a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!114 &122253728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122253723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb8d01ca1780bc240818f44aaaa8a8f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_listeners:
@@ -236,30 +260,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &122253728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122253723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b2874fcc0263c9459c028e90b8a9c9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: ae8d9d44
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fc771fbd0bfb9034d82ba985653f417d, type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1 &290101889
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,40 +358,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6103705171701696162, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
   m_PrefabInstance: {fileID: 1678814004}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &372719797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372719795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd974b377ea124447a379432f4f10e13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: ae8d9d44
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c6fe79ac4997bef4b8169672d5c8b9d2, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []
 --- !u!114 &372719798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +367,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 372719795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9befc2ae2af9f3f4880e26b8a94b3c37, type: 3}
+  m_Script: {fileID: 11500000, guid: eb8d01ca1780bc240818f44aaaa8a8f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_listeners:
@@ -414,7 +380,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!1 &1650845324
+--- !u!1 &1184998011
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,8 +388,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1650845326}
-  - component: {fileID: 1650845325}
+  - component: {fileID: 1184998013}
+  - component: {fileID: 1184998012}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -431,19 +397,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1650845325
+--- !u!114 &1184998012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650845324}
+  m_GameObject: {fileID: 1184998011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d86ff89ecc5c85e489bbdf0f30597cbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b54dfabc54afd0429781036c55c7b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: ff871fcf947cd084a9170b27a5a41a01, type: 2}
+  InitializationSettings: {fileID: 11400000, guid: da9c552f9bee2dd41a139ed49d5bf066, type: 2}
   basePath: 
   language: 
   defaultPoolSize: 0
@@ -456,13 +422,13 @@ MonoBehaviour:
   spatialAudioPoolSize: 0
   maxSoundPropagationDepth: 0
   engineLogging: 0
---- !u!4 &1650845326
+--- !u!4 &1184998013
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650845324}
+  m_GameObject: {fileID: 1184998011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
