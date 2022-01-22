@@ -21,14 +21,25 @@ public class Enemy : MonoBehaviour
     public Animator animator;
 
     private IEnumerator followRoutine;
+
+    public void Attack()
+    {   
+        StopCoroutine(followRoutine);
+        animator.SetTrigger("Attack");
+        Invoke(nameof(StartRoutine), 1f);
+    }
+    private void StartRoutine()
+    {
+        followRoutine = FollowTarget();
+        StartCoroutine(followRoutine);
+    }
     //Elles sont publiques car elles ont besoin d'être utilisée dans d'autres scrits/sous-classes
 
     public virtual void Start()
     {
        target = GameObject.FindGameObjectWithTag(tagTarget).transform;
        SetRandomSpriteColor();
-       followRoutine = FollowTarget();
-       StartCoroutine(followRoutine);
+        StartRoutine();
     }
     IEnumerator FollowTarget()
     {
