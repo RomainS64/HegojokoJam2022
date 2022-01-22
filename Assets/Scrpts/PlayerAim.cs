@@ -8,6 +8,7 @@ public class PlayerAim : MonoBehaviour
     private Camera camera;
     [SerializeField] private GameObject bullet;
     [SerializeField] private float coolDown;
+    [SerializeField] private GameObject weaponMouth;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,7 @@ public class PlayerAim : MonoBehaviour
             Invoke(nameof(StopCoolDown), coolDown);
             GameObject newBullet = Instantiate(bullet);
             var dir = (Point_2 - Point_1).normalized;
-            newBullet.GetComponent<Bullet>().ShootBullet(transform.position, transform.rotation, dir);
+            newBullet.GetComponent<Bullet>().ShootBullet(weaponMouth.transform.position, transform.rotation, dir);
             
         }
     }
