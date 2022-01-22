@@ -18,6 +18,10 @@ public class StageNounoursRain : Stage
     private int numSpawns;
     private int oldSpawnPointIndexUsed = -1;
 
+    private void Start()
+    {
+        base.Start();
+    }
     public override void OnStageStart()
     {
         zemar.canMakeDamage = false;

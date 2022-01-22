@@ -27,10 +27,11 @@ public class Intro : MonoBehaviour
         fadeCanvas.SetActive(true);
         yield return new WaitForSeconds(2f);
         player.SetActive(true);
+        introContent.SetActive(false);
         scroller.transform.position = pointInGame.position;
         yield return new WaitForSeconds(2f);
         fadeCanvas.SetActive(false);
-        InGameCanvas.SetActive(false);
+        InGameCanvas.SetActive(true);
         waveSpawner.StartFirstWave();
 
     }

@@ -8,10 +8,20 @@
 		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="2983729342">
+		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="4089291436">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="138404804" Name="playGunSound" ObjectPath="\Events\Default Work Unit\playGunSound" GUID="{4F550D97-B308-4296-B184-14E8D5D41C2D}" DurationType="OneShot" DurationMin="0.45429" DurationMax="0.45429">
+					<IncludedMemoryFiles>
+						<File Id="999528939" Language="SFX">
+							<ShortName>tir1.wav</ShortName>
+							<Path>SFX\tir1_5E65B236.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
