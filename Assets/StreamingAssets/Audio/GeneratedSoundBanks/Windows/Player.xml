@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="518130299">
+		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="3488054681">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -24,7 +24,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3591998379" Name="playPunchline" ObjectPath="\Events\Default Work Unit\playPunchline" GUID="{B48BA2C0-E7BA-42CE-AE2C-9C935DD9AC3B}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2097335752" Name="playWalk" ObjectPath="\Events\Default Work Unit\playWalk" GUID="{F56F8950-8C4A-40A5-A6F7-A2E130CF0115}" DurationType="OneShot" DurationMin="0.193108" DurationMax="0.33622">
+				<Event Id="2097335752" Name="playWalk" ObjectPath="\Events\Default Work Unit\playWalk" GUID="{F56F8950-8C4A-40A5-A6F7-A2E130CF0115}" DurationType="OneShot" DurationMin="1.255" DurationMax="1.255">
 					<IncludedMemoryFiles>
 						<File Id="543468535" Language="SFX">
 							<ShortName>footstep.wav</ShortName>

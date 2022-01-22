@@ -5,6 +5,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	2840201783	playDeath			\Default Work Unit\playDeath	
 	3591998379	playPunchline			\Default Work Unit\playPunchline	
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	396043502	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Silence\Wwise Silence	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	543468535	footstep	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\footstep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\footstep		45076
 	999528939	gunSound	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\tir1_5E65B236.wem		\Actor-Mixer Hierarchy\Default Work Unit\gunSound		80268

@@ -1,0 +1,97 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\",
+   "SourceFilesRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\.cache\\Windows\\",
+   "SoundBanksRoot": "F:\\devJeux\\HegoJokoWinterJam\\ZemmarEtLeGatoAlaFraiz\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "692772953",
+    "GUID": "{540281BB-D6A5-494F-86C0-4509CDDBF508}",
+    "Language": "SFX",
+    "Hash": "2229329850",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Ennemi",
+    "ShortName": "Ennemi",
+    "Path": "Ennemi.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1155634196",
+      "Name": "playBisounoursDeath",
+      "ObjectPath": "\\Events\\Default Work Unit\\playBisounoursDeath",
+      "GUID": "{364B857B-7F85-4C36-8F1F-631F7B062EF1}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.156242",
+      "DurationMax": "1.635173",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "69483760",
+        "Language": "SFX",
+        "ShortName": "dmg\\dmg2.wav",
+        "Path": "SFX\\dmg\\dmg2_10C4C929.wem"
+       },
+       {
+        "Id": "142054616",
+        "Language": "SFX",
+        "ShortName": "dmg\\dmg1.wav",
+        "Path": "SFX\\dmg\\dmg1_10C4C929.wem"
+       },
+       {
+        "Id": "395857831",
+        "Language": "SFX",
+        "ShortName": "dmg\\dmg3.wav",
+        "Path": "SFX\\dmg\\dmg3_10C4C929.wem"
+       },
+       {
+        "Id": "403386253",
+        "Language": "SFX",
+        "ShortName": "dmg\\dmg5.wav",
+        "Path": "SFX\\dmg\\dmg5_10C4C929.wem"
+       },
+       {
+        "Id": "575151574",
+        "Language": "SFX",
+        "ShortName": "dmg\\dmg4.wav",
+        "Path": "SFX\\dmg\\dmg4_10C4C929.wem"
+       },
+       {
+        "Id": "670784540",
+        "Language": "SFX",
+        "ShortName": "dmg\\dmg7.wav",
+        "Path": "SFX\\dmg\\dmg7_10C4C929.wem"
+       },
+       {
+        "Id": "842634065",
+        "Language": "SFX",
+        "ShortName": "pooof.wav",
+        "Path": "SFX\\pooof_10C4C929.wem"
+       },
+       {
+        "Id": "936784964",
+        "Language": "SFX",
+        "ShortName": "dmg\\dmg6.wav",
+        "Path": "SFX\\dmg\\dmg6_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3093616831",
+      "Name": "playPlane",
+      "ObjectPath": "\\Events\\Default Work Unit\\playPlane",
+      "GUID": "{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}",
+      "MaxAttenuation": "0.",
+      "DurationType": "OneShot",
+      "DurationMin": "0.",
+      "DurationMax": "0."
+     }
+    ]
+   }
+  ]
+ }
+}
