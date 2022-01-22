@@ -16,6 +16,7 @@ public class StageNounoursRain : Stage
 
     public Transform[] pointSpawnNounours;
     private int numSpawns;
+    private int oldSpawnPointIndexUsed = -1;
 
     private void Start()
     {
@@ -48,6 +49,14 @@ public class StageNounoursRain : Stage
     {
         for (int i = 0; i < numSpawns; i++)
         {
+            int randomSpotToSpawnIndex;
+            do
+            {
+                randomSpotToSpawnIndex = Random.Range(0, pointSpawnNounours.Length - 1);
+            } while (randomSpotToSpawnIndex == oldSpawnPointIndexUsed);
+
+            oldSpawnPointIndexUsed = randomSpotToSpawnIndex;
+            
             Transform randomSpotToSpawn = pointSpawnNounours[Random.Range(0, pointSpawnNounours.Length - 1)];
             Instantiate(enemyToSpawn, randomSpotToSpawn.position, randomSpotToSpawn.rotation);
 

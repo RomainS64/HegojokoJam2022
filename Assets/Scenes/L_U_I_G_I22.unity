@@ -514,6 +514,7 @@ MonoBehaviour:
   positionToAppearFromRightSide: {fileID: 1923402093}
   spriteRenderer: {fileID: 146310022}
   currentDamageToPlayer: 10
+  isInvincible: 0
   canMakeDamage: 0
 --- !u!95 &236601203
 Animator:
@@ -627,6 +628,7 @@ Transform:
   - {fileID: 375131576}
   - {fileID: 544640613}
   - {fileID: 1420618033}
+  - {fileID: 888564260}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -950,6 +952,78 @@ Transform:
   m_Father: {fileID: 72034197}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &888564259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 888564260}
+  - component: {fileID: 888564262}
+  - component: {fileID: 888564261}
+  m_Layer: 0
+  m_Name: StageNaruto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &888564260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888564259}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 337627310}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &888564261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888564259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba2d5415d38d20d469f15c721a6b3919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageName: No named stage
+  pointPositionDedoublement: {fileID: 0}
+  pointPositionDedoublementOutOfScreen: {fileID: 0}
+  speedZemarNaruto: 3
+  durationBeforeDedoublement: 3
+  durationBeforeGoingUpWhileDedoubling: 1.5
+  zemarClones: []
+--- !u!114 &888564262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888564259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1ff274d936b7343b23488ec978dd32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageName: No named stage
+  positionFlyingZemar: {fileID: 0}
+  enemyToSpawn: {fileID: 0}
+  mixMaxNumSpawns: {x: 0, y: 0}
+  speedZemarDeplacement: 2.5
+  durationlaunchSpawnAfterZamarFlies: 4
+  durationBetweenSpawns: 0
+  durationAfterLastNounoursSpawns: 4
+  pointSpawnNounours: []
 --- !u!1 &914495041
 GameObject:
   m_ObjectHideFlags: 0

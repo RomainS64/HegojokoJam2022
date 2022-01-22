@@ -13,6 +13,7 @@ public class Zemar : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     public float currentDamageToPlayer = 10;
+    public bool isInvincible = false;
     public bool canMakeDamage = false;
 
     private Animator animator;
@@ -73,5 +74,10 @@ public class Zemar : MonoBehaviour
     public void ToggleLevitateAnimation(bool isLevitating)
     {
         animator.SetBool("isLevitating", isLevitating);
+    }
+
+    public void TriggerDedoublementAnimation()
+    {
+        animator.SetTrigger("Dedoublement");
     }
 }
