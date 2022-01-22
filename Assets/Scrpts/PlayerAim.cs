@@ -24,10 +24,5 @@ public class PlayerAim : MonoBehaviour
         float aimAngle = Mathf.Atan2(Point_2.y - Point_1.y, Point_2.x - Point_1.x) * 180 / Mathf.PI;
         Debug.Log(aimAngle);
         transfArm.transform.rotation = Quaternion.Euler(new Vector3(0, 0, aimAngle));
-        Aim();
-    }
-
-    void Aim()
-    {
     }
 }
