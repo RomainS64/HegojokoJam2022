@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3087328314	playLaserGun			\Default Work Unit\playLaserGun	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	699076438	laserGun	F:\devJeux\ZemmarEtLeGatoAlaFraiz\ZemmarEtLeGatoAlaFraiz_WwiseProject\.cache\Windows\SFX\boomBoomDansLesZoreys_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\laserGun		157872
+
