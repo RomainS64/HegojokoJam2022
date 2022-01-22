@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float speed;
     public void ShootBullet(Vector3 position, Quaternion rotation, Vector3 dir)
     {
-        
+        AkSoundEngine.PostEvent("PlayGunSound", gameObject);
         Debug.Log("Rotation : " + rotation);
         transform.position = position;
         transform.rotation = rotation;
