@@ -12,8 +12,7 @@ public class Scroller : MonoBehaviour
     IEnumerator ScrollRoutine;
     private void Start()
     {
-        StartScrolling();
-        IsScrolling = true;
+        IsScrolling = false;
     }
     public void StartScrolling()
     {

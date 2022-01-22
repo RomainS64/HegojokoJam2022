@@ -19,15 +19,13 @@ public class Enemy : MonoBehaviour
     public float timeBetweenAttacks;
     public int damage;
 
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     public EveryNounoursColors everyNounoursColors;
     //Elles sont publiques car elles ont besoin d'être utilisée dans d'autres scrits/sous-classes
 
     public virtual void Start()
     {
        // player = GameObject.FindGameObjectWithTag("Player").transform;
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
         SetRandomSpriteColor();
     }
 
