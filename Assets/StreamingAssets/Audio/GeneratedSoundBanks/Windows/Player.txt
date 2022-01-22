@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	138404804	playGunSound			\Default Work Unit\playGunSound	
+	1903876501	playDmg			\Default Work Unit\playDmg	
+	2097335752	playWalk			\Default Work Unit\playWalk	
+	2840201783	playDeath			\Default Work Unit\playDeath	
+	3591998379	playPunchline			\Default Work Unit\playPunchline	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	543468535	footstep	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\footstep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\footstep		45076
+	999528939	gunSound	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\tir1_5E65B236.wem		\Actor-Mixer Hierarchy\Default Work Unit\gunSound		80268
+

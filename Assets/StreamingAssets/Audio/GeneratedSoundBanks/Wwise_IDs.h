@@ -13,7 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAYBISOUNOURSDEATH = 1155634196U;
+        static const AkUniqueID PLAYBUTTON = 1843531235U;
+        static const AkUniqueID PLAYDEATH = 2840201783U;
+        static const AkUniqueID PLAYDMG = 1903876501U;
         static const AkUniqueID PLAYGUNSOUND = 138404804U;
+        static const AkUniqueID PLAYPLANE = 3093616831U;
+        static const AkUniqueID PLAYPUNCHLINE = 3591998379U;
+        static const AkUniqueID PLAYWALK = 2097335752U;
+        static const AkUniqueID PLAYZEMMARDMG = 3829630293U;
+        static const AkUniqueID PLAYZEMMARLAUGH = 2304268690U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
@@ -35,7 +44,12 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID ENNEMI = 692772953U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID UI = 1551306167U;
+        static const AkUniqueID WORLD = 2609808943U;
+        static const AkUniqueID ZEMMAR = 144077205U;
     } // namespace BANKS
 
     namespace BUSSES

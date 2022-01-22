@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\</ProjectRoot>
+		<SourceFilesRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\devJeux\HegoJokoWinterJam\ZemmarEtLeGatoAlaFraiz\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="144077205" GUID="{40200DD7-D46C-4A96-A216-66BE2DC0D470}" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Zemmar</ObjectPath>
+			<ShortName>Zemmar</ShortName>
+			<Path>Zemmar.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3829630293" Name="playZemmarDmg" ObjectPath="\Events\Default Work Unit\playZemmarDmg" GUID="{A9357D65-685E-4A60-9506-8EBC13DC26B2}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2304268690" Name="playZemmarLaugh" ObjectPath="\Events\Default Work Unit\playZemmarLaugh" GUID="{CB19B79A-BAB9-4099-A136-75FACF0B1D21}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="692772953" GUID="{540281BB-D6A5-494F-86C0-4509CDDBF508}" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ennemi</ObjectPath>
+			<ShortName>Ennemi</ShortName>
+			<Path>Ennemi.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1155634196" Name="playBisounoursDeath" ObjectPath="\Events\Default Work Unit\playBisounoursDeath" GUID="{364B857B-7F85-4C36-8F1F-631F7B062EF1}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3093616831" Name="playPlane" ObjectPath="\Events\Default Work Unit\playPlane" GUID="{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="518130299">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2840201783" Name="playDeath" ObjectPath="\Events\Default Work Unit\playDeath" GUID="{5BA69027-8874-4256-A8D6-BC3E6A0C949D}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1903876501" Name="playDmg" ObjectPath="\Events\Default Work Unit\playDmg" GUID="{964A5F27-9FD9-4B60-8249-133DCAFF460A}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="138404804" Name="playGunSound" ObjectPath="\Events\Default Work Unit\playGunSound" GUID="{4F550D97-B308-4296-B184-14E8D5D41C2D}" DurationType="OneShot" DurationMin="0.404727" DurationMax="0.509924">
+					<IncludedMemoryFiles>
+						<File Id="999528939" Language="SFX">
+							<ShortName>tir1.wav</ShortName>
+							<Path>SFX\tir1_5E65B236.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3591998379" Name="playPunchline" ObjectPath="\Events\Default Work Unit\playPunchline" GUID="{B48BA2C0-E7BA-42CE-AE2C-9C935DD9AC3B}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2097335752" Name="playWalk" ObjectPath="\Events\Default Work Unit\playWalk" GUID="{F56F8950-8C4A-40A5-A6F7-A2E130CF0115}" DurationType="OneShot" DurationMin="0.193108" DurationMax="0.33622">
+					<IncludedMemoryFiles>
+						<File Id="543468535" Language="SFX">
+							<ShortName>footstep.wav</ShortName>
+							<Path>SFX\footstep_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1958929096">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1551306167" GUID="{B5E8FC2F-A85A-4F28-8388-0E98301AB755}" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1843531235" Name="playButton" ObjectPath="\Events\Default Work Unit\playButton" GUID="{BFC971D7-3BFD-4346-8B00-AAF291529611}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2609808943" GUID="{130EF232-2122-428E-A60F-98C11E5BEAAD}" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\World</ObjectPath>
+			<ShortName>World</ShortName>
+			<Path>World.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" GUID="{5F17FB2E-571A-4628-AD02-8B7841FB68BD}" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
