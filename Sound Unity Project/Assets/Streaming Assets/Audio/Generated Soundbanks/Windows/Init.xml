@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\</ProjectRoot>
+		<SourceFilesRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\devJeux\HegoJokoWinterJam\ZemmarEtLeGatoAlaFraiz\Sound Unity Project\Assets\Streaming Assets\Audio\Generated Soundbanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1958929096">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

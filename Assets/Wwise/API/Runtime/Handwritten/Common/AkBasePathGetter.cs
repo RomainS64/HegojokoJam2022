@@ -150,7 +150,7 @@ public partial class AkBasePathGetter
 
 		try
 		{
-			if (System.IO.Path.GetPathRoot(SoundBankDest) == "")
+			if (SoundBankDest != "" && System.IO.Path.GetPathRoot(SoundBankDest) == "")
 			{
 				// Path is relative, make it full
 				SoundBankDest = AkUtilities.GetFullPath(System.IO.Path.GetDirectoryName(WwiseProjectFullPath), SoundBankDest);

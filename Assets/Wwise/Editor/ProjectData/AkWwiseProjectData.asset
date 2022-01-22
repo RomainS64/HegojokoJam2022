@@ -359,8 +359,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 62fc83d0f83bd4489bbe0b1ae50dda40
     GuidInternal: 
-    m_lastTime: -8585587478218003706
-    List: []
+    m_lastTime: -8585587450915944823
+    List:
+    - name: playGunSound
+      guid: 970d554f08b39642b18414e8d5d41c2d
+      id: 138404804
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 62fc83d0f83bd4489bbe0b1ae50dda40
+      - ElementName: playGunSound
+        ObjectType: 3
+        guid: 970d554f08b39642b18414e8d5d41c2d
+      Path: Events\Default Work Unit\playGunSound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -612,7 +629,7 @@ MonoBehaviour:
     m_lastTime: -8585587478219057442
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0600000007000000080000000a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
