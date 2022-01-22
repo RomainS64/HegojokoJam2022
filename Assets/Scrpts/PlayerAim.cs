@@ -6,6 +6,7 @@ public class PlayerAim : MonoBehaviour
 {
     private bool hasShot = false;
     private Camera camera;
+    private SpriteRenderer sprite;
     [SerializeField] private GameObject bullet;
     [SerializeField] private float coolDown;
     [SerializeField] private GameObject weaponMouth;
@@ -14,6 +15,7 @@ public class PlayerAim : MonoBehaviour
     void Start()
     {
         camera = FindObjectOfType<Camera>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -32,6 +34,15 @@ public class PlayerAim : MonoBehaviour
             var dir = (Point_2 - Point_1).normalized;
             newBullet.GetComponent<Bullet>().ShootBullet(weaponMouth.transform.position, transform.rotation, dir);
             
+        }
+
+        if (Point_2.x > transform.position.x)
+        {
+            sprite.flipY = false;
+        }
+        else
+        {
+            sprite.flipY = true;
         }
     }
     void StopCoolDown()

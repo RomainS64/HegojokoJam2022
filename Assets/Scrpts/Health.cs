@@ -10,6 +10,14 @@ public class Health : MonoBehaviour
     public float maxHealth;
 
     public Slider healthBar;
+<<<<<<< HEAD
+=======
+
+    public float CurrentHealth
+    {
+        get { return curHealth; }
+    }
+>>>>>>> 72fc1059ec1a21b091f85c07e94f01f4cf32dc81
 
     // Start is called before the first frame update
     void Start()
@@ -28,10 +36,21 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void DamagePlayer( int damage)
+    public void DamagePlayer( int damageValue )
     {
-        curHealth -= damage;
+        curHealth -= damageValue;
 
         healthBar.value = curHealth;
+<<<<<<< HEAD
+=======
+    }
+   
+    //heal player
+    public void HealPlayer (int healValue)
+    {
+        curHealth += healValue;
+
+        healthBar.value = curHealth;
+>>>>>>> 72fc1059ec1a21b091f85c07e94f01f4cf32dc81
     }
 }
