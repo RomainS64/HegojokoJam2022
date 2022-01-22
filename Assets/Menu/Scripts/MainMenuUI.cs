@@ -19,7 +19,7 @@ public class MainMenuUI : MonoBehaviour
     public void PlayGame()
     {
         PlayButtonSound();
-        //SceneManager.LoadScene("IntroDialogue");
+        SceneManager.LoadScene(2);
     }
 
 
