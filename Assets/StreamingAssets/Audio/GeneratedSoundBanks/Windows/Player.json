@@ -16,7 +16,7 @@
     "Id": "1069431850",
     "GUID": "{9A3FD47A-39E4-4D02-A594-2643084AE054}",
     "Language": "SFX",
-    "Hash": "518130299",
+    "Hash": "3488054681",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
     "ShortName": "Player",
     "Path": "Player.bnk",
@@ -74,8 +74,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\playWalk",
       "GUID": "{F56F8950-8C4A-40A5-A6F7-A2E130CF0115}",
       "DurationType": "OneShot",
-      "DurationMin": "0.193108",
-      "DurationMax": "0.33622",
+      "DurationMin": "1.255",
+      "DurationMax": "1.255",
       "IncludedMemoryFiles": [
        {
         "Id": "543468535",
