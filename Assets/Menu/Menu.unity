@@ -433,6 +433,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7433366654015350090, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654015350090, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654579609840, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654579609840, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654579609840, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654579609840, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654579609840, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654831811620, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654831811620, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433366654934532765, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7433366655326432534, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -521,6 +561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 7433366655334907258, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dd71ecd662504148b2a5559ae8f912e, type: 3}
 --- !u!1001 &4724614194528673367
@@ -577,6 +621,10 @@ PrefabInstance:
     - target: {fileID: 4724614192808413181, guid: 241213d7d4e7fb747bce4ca00109688f, type: 3}
       propertyPath: m_Name
       value: PauseUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724614192808413181, guid: 241213d7d4e7fb747bce4ca00109688f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 241213d7d4e7fb747bce4ca00109688f, type: 3}
