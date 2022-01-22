@@ -39,7 +39,7 @@ public class PauseUI : MonoBehaviour
     {
         PlayButtonSound();
 
-        //SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(1);
     }
 
     private void BackToTheGame()
@@ -51,7 +51,7 @@ public class PauseUI : MonoBehaviour
 
     private void PlayButtonSound()
     {
-        //AudioManager.instance.PlayOneShot("UI_button");
+        AkSoundEngine.PostEvent("playButtton", gameObject);
     }
 
     private void TogglePauseUI(bool isActive)
