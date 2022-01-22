@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2545934334866638315}
   - component: {fileID: 2545934334866638314}
+  - component: {fileID: 8071070013875111759}
   m_Layer: 0
   m_Name: BisounoursRandom
   m_TagString: Nounours
@@ -45,15 +46,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47adc575217d0524c8636b89a65cacc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  player: {fileID: 0}
+  target: {fileID: 0}
   tagTarget: Player
   isFlying: 0
-  speed: 0
+  speed: 10
   timeBetweenAttacks: 0
   damage: 0
   spriteRenderer: {fileID: 4795028836251529916}
   everyNounoursColors: {fileID: 11400000, guid: 5e648b9f6d031be4983726d3117520e3, type: 2}
+--- !u!61 &8071070013875111759
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2545934334866638312}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03055276, y: 0.034917355}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.88651824, y: 1.7332659}
+  m_EdgeRadius: 0
 --- !u!1 &2545934335186315443
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,7 +106,7 @@ Transform:
   m_GameObject: {fileID: 2545934335186315443}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.16127418, y: 0.16127418, z: 0.16127418}
   m_Children: []
   m_Father: {fileID: 2545934334866638315}
   m_RootOrder: 0
@@ -124,7 +150,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a0775e5a437bfb84ca3ec0f14c18366d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -162,7 +188,7 @@ Transform:
   m_GameObject: {fileID: 8152541727685702804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.16127418, y: 0.16127418, z: 0.16127418}
   m_Children: []
   m_Father: {fileID: 2545934334866638315}
   m_RootOrder: 1
