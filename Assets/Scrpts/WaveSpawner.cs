@@ -43,8 +43,6 @@ public class WaveSpawner : MonoBehaviour
         currentWaveIndex = waveIndexToStart;
 
         scroller = FindObjectOfType<Scroller>();
-
-        StartFirstWave();
     }
 
     public void StartFirstWave()
