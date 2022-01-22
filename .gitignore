@@ -9,3 +9,10 @@
 Packages/packages-lock.json
 /.vscode/
 /UserSettings/
+
+#WWise gitignore
+.cache/
+*.akd
+*.validationcache
+[Aa]ssets/WwiseSettings.xml
+[Aa]ssets/WwiseSettings.xml.meta
