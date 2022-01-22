@@ -631,8 +631,8 @@ MonoBehaviour:
   waves:
   - enemiesAndSpawnParameters:
     - enemy: {fileID: 2545934334866638312, guid: 4f277e4fb75f6b445903e6aa365f54d7, type: 3}
-      numberOfEnemies: 10
-    minMaxTimeBetweenSpawns: {x: 0.2, y: 0.5}
+      numberOfEnemies: 100
+    minMaxTimeBetweenSpawns: {x: 0.05, y: 0.5}
     timeBeforeStartingWave: 2
     isScrolling: 1
   - enemiesAndSpawnParameters:
