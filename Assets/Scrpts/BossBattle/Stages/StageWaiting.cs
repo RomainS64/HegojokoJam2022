@@ -6,8 +6,14 @@ public class StageWaiting : Stage
 {
     public float durationWaiting = 5;
 
+    private void Start()
+    {
+        base.Start();
+    }
     public override void OnStageStart()
     {
+        zemar = FindObjectOfType<Zemar>();
+        Debug.Log(zemar.canMakeDamage);
         zemar.canMakeDamage = false;
         zemar.MoveToDefaultPosition();
 
