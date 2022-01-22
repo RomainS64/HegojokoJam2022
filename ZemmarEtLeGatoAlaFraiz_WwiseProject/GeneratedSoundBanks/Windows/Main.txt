@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3538538062	onProutPlay			\Default Work Unit\onProutPlay	
+	3561554712	test_Son			\Default Work Unit\test_Son	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	759528112	boom	F:\devJeux\ZemmarEtLeGatoAlaFraiz\ZemmarEtLeGatoAlaFraiz_WwiseProject\.cache\Windows\SFX\boomBoomDansLesZoreys_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\boom		157872
+

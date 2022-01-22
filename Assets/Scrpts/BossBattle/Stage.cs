@@ -12,23 +12,27 @@ public class Stage : MonoBehaviour
         ENDING
     }
 
+    public string stageName = "No named stage";
     public StateStage currentState;
     public event EventHandler OnStageEndingEvent;
     public void OnStageStart()
     {
         currentState = StateStage.STARTING;
         Debug.Log("On start");
-        currentState = StateStage.RUNNING;
+        OnStageRunning();
     }
 
     public void OnStageRunning()
     {
+        currentState = StateStage.RUNNING;
+
         MakeActions();
     }
 
     public void OnStageEnd()
     {
         currentState = StateStage.ENDING;
+
         Debug.Log("On End");
 
         if (OnStageEndingEvent != null) OnStageEndingEvent(this, EventArgs.Empty);
@@ -37,6 +41,13 @@ public class Stage : MonoBehaviour
     public void MakeActions()
     {
         Debug.Log("Doing some action");
+        StartCoroutine(LaunchNewStageTimer());
+    }
+
+    private IEnumerator LaunchNewStageTimer()
+    {
+        yield return new WaitForSeconds(2);
         OnStageEnd();
+
     }
 }

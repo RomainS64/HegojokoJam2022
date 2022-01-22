@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a14f1979842ca14881c236b6468547de
     GuidInternal: 
-    m_lastTime: -8585587987194003026
-    List: []
+    m_lastTime: -8585587608704245367
+    List:
+    - name: Player_SB
+      guid: e50c4a2a7847204aa3f09ad45af6c8a0
+      id: 3923732994
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a14f1979842ca14881c236b6468547de
+      - ElementName: Player_SB
+        ObjectType: 7
+        guid: e50c4a2a7847204aa3f09ad45af6c8a0
+      Path: SoundBanks\Default Work Unit\Player_SB
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0752434ed2c789408f181438cb094120
     GuidInternal: 
-    m_lastTime: -8585587987194434872
-    List: []
+    m_lastTime: -8585587608704440873
+    List:
+    - name: playLaserGun
+      guid: de2f079e77fb014992616bf615b98477
+      id: 3087328314
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0752434ed2c789408f181438cb094120
+      - ElementName: playLaserGun
+        ObjectType: 3
+        guid: de2f079e77fb014992616bf615b98477
+      Path: Events\Default Work Unit\playLaserGun
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
