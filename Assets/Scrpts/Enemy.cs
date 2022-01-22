@@ -52,6 +52,7 @@ public class Enemy : MonoBehaviour
     public void Kill()
     {
         animator.SetTrigger("Sleep");
+        gameObject.tag = "NounoursMort";
         GetComponent<BoxCollider2D>().enabled = false;
         StopCoroutine(followRoutine);
         Invoke(nameof(SetStatic), 2f);
