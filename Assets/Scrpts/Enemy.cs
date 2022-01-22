@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField]
-    private int health;
-
     [HideInInspector]
-    public Transform player;
+    public Transform target;
 
     public string tagTarget = "Player";
 
@@ -25,27 +22,25 @@ public class Enemy : MonoBehaviour
 
     public virtual void Start()
     {
-       // player = GameObject.FindGameObjectWithTag("Player").transform;
-        SetRandomSpriteColor();
+       target = GameObject.FindGameObjectWithTag(tagTarget).transform;
+       SetRandomSpriteColor();
+       StartCoroutine(FollowTarget());
     }
-
-    public void TakeDamage(int damageAmount)
+    IEnumerator FollowTarget()
     {
-        health -= damageAmount;
-
-        if (health <= 0)
+        while (true)
         {
-            int randHealth = Random.Range(0, 101);
-
-            /*if(randHealth <= healthPickupChance)
-            {
-                Instantiate(healthPickup, transform.position, transform.rotation);
-            }*/
-
-            Destroy(gameObject);
+            Vector3 dir = (target.position- transform.position).normalized;
+            if (dir.x>0) spriteRenderer.flipX = false;
+            else if (dir.x<0) spriteRenderer.flipX = true;
+            transform.Translate(dir * speed/500);
+            yield return new WaitForFixedUpdate();
         }
     }
-
+    public void Kill()
+    {
+        Destroy(gameObject);
+    }
     public void SetRandomSpriteColor()
     {
         Color newColor = everyNounoursColors.allColors[Random.Range(0, everyNounoursColors.allColors.Length)];
