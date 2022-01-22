@@ -18,6 +18,8 @@ public class StageMoveAround : Stage
     public override void OnStageStart()
     {
         isRightSide = true;
+        zemar.canMakeDamage = false;
+
         numDeplacements = Random.Range(mixMaxNumDeplacement.x, mixMaxNumDeplacement.y + 1);
 
         base.OnStageStart();
@@ -58,7 +60,7 @@ public class StageMoveAround : Stage
 
     private IEnumerator MoveBackToDefaultPosition()
     {
-        zemar.MoveToDefaultPosition(speedZemarDeplacement);
+        zemar.AppearFromRightSide(speedZemarDeplacement);
 
         yield return new WaitForSeconds(durationToNextDeplacement);
         OnStageEnd();

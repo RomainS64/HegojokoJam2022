@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class Zemar : MonoBehaviour
 {
+    public Transform defaultPosition;
+
+    public const float speedAppearFromRightSide = 1.2f;
+    public Transform positionToAppearFromRightSide;
+
+    public SpriteRenderer spriteRenderer;
+
+    public float currentDamageToPlayer = 10;
+    public bool canMakeDamage = false;
+
     private Vector2 pointToMoveOn;
     private float zemarSpeed;
-
-    public Transform defaultPosition;
-    public Transform positionToComeFromRight;
-
-    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
         pointToMoveOn = transform.position;
         zemarSpeed = 0;
     }
@@ -40,9 +43,9 @@ public class Zemar : MonoBehaviour
         zemarSpeed = speed;
     }
 
-    public void AppearFromRightSide(float speed)
+    public void AppearFromRightSide(float speed = speedAppearFromRightSide)
     {
-        transform.position = positionToComeFromRight.transform.position;
+        transform.position = positionToAppearFromRightSide.transform.position;
         MoveToDefaultPosition(speed);
     }
 
