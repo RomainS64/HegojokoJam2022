@@ -273,6 +273,14 @@ PrefabInstance:
       propertyPath: downY
       value: 
       objectReference: {fileID: 1544451945}
+    - target: {fileID: 8356542581678994633, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2953334625973413452, guid: 9bbdbed7a37eb7c469110515fab5c90f, type: 3}
+    - target: {fileID: 8356542581678994633, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
+      propertyPath: coolDown
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
 --- !u!1 &1029408435

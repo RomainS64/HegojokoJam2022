@@ -6,11 +6,14 @@ public class Bullet : MonoBehaviour
 {
 
     [SerializeField] private float speed = 1f;
-    public void shootBullet(Vector3 position, Vector3 rotation, Vector3 direction)
+    public void ShootBullet(Vector3 position, Quaternion rotation, Vector3 dir)
     {
+        
+        Debug.Log("Rotation : " + rotation);
         transform.position = position;
-        transform.rotation = Quaternion.Euler(rotation);
-        StartCoroutine(moveBullet(direction));
+        transform.rotation = rotation;
+        
+        StartCoroutine(moveBullet(dir));
     }
 
     IEnumerator moveBullet(Vector3 direction)
@@ -18,8 +21,9 @@ public class Bullet : MonoBehaviour
         for (int i = 0; i < 100; i++)
         {
             yield return new WaitForSeconds(5/100);
-            transform.Translate(direction * speed);
+            transform.position += direction * speed/10;
         }
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

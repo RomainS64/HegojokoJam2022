@@ -4,25 +4,37 @@ using UnityEngine;
 
 public class PlayerAim : MonoBehaviour
 {
-    private Transform transfArm;
+    private bool hasShot = false;
     private Camera camera;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private float coolDown;
 
     // Start is called before the first frame update
     void Start()
     {
-        transfArm = GetComponent<Transform>();
         camera = FindObjectOfType<Camera>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 Point_1 = camera.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log("Point 1: " + Point_1);
-        Debug.Log("Mp: " + Input.mousePosition);
-        Vector2 Point_2 = transfArm.position;
+
+        Vector2 Point_2 = camera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 Point_1 = transform.position;
         float aimAngle = Mathf.Atan2(Point_2.y - Point_1.y, Point_2.x - Point_1.x) * 180 / Mathf.PI;
-        Debug.Log(aimAngle);
-        transfArm.transform.rotation = Quaternion.Euler(new Vector3(0, 0, aimAngle));
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, aimAngle));
+        if (!hasShot && Input.GetAxis("Shot") > 0)
+        {
+            hasShot = true;
+            Invoke(nameof(StopCoolDown), coolDown);
+            GameObject newBullet = Instantiate(bullet);
+            var dir = (Point_2 - Point_1).normalized;
+            newBullet.GetComponent<Bullet>().ShootBullet(transform.position, transform.rotation, dir);
+            
+        }
+    }
+    void StopCoolDown()
+    {
+        hasShot = false;
     }
 }
