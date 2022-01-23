@@ -110,8 +110,9 @@ public class WaveSpawner : MonoBehaviour
             {
                 
                 EndPreparation.SetEndX(scroller.transform.position.x);
-                endFade.SetActive(true);
-                Invoke(nameof(LoadNextScene), 2f);
+                //endFade.SetActive(true);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                //Invoke(nameof(LoadNextScene), 2f);
                 Debug.Log("gg la street t'as gagné");
             }
         }
