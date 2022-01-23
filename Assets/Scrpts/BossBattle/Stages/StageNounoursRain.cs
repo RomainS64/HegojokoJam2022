@@ -43,6 +43,7 @@ public class StageNounoursRain : Stage
         //Animations... tout le bordel.
         yield return new WaitForSeconds(durationlaunchSpawnAfterZamarFlies);
         zemar.ToggleLeveBras(true);
+        AkSoundEngine.PostEvent("playPlane", gameObject);
         StartCoroutine(SpawnFallingNounours());
     }
 
