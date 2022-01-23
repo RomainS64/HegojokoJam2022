@@ -35,6 +35,7 @@ public class PlayerMouvements : MonoBehaviour
     }
     public void GetHit(Vector3 position)
     {
+        FindObjectOfType<ScreenShake>().Shake(0.3f, 1f);
         if (hitInvulnerable) return;
         hitInvulnerable = true;
         FindObjectOfType<PlayerMouvements>().GetHit(transform.parent.position);
