@@ -17,6 +17,8 @@ public class Stage : MonoBehaviour
     private StateStage currentState;
     public event EventHandler OnStageEndingEvent;
 
+    public int damageZemarWhileStage;
+
     protected Zemar zemar;
 
 
@@ -30,6 +32,8 @@ public class Stage : MonoBehaviour
         currentState = StateStage.STARTING;
 
         Debug.Log("On start : " + stageName);
+
+        zemar.player.SetCurrentDamageWhenHitByZemar(damageZemarWhileStage);
 
         OnStageRunning();
     }

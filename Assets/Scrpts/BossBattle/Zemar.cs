@@ -16,7 +16,7 @@ public class Zemar : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
 
-    public float currentDamageToPlayer = 10;
+    public float damagetakenWhenHit = 5.0f;
     public bool isInvincible = false;
     public bool canMakeDamage = false;
     public bool isDashing = false;
@@ -33,7 +33,7 @@ public class Zemar : MonoBehaviour
     [SerializeField] private Slider zemarHealthBar;
     private bool isAmongClones;
 
-    private float zemarCurrentHealth;
+    public float zemarCurrentHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +45,6 @@ public class Zemar : MonoBehaviour
         pointToMoveOn = defaultPosition.position;
         zemarSpeed = 1;
 
-        zemarCurrentHealth = 100;
         zemarHealthBar.value = zemarCurrentHealth;
 
         ToggleLevitateAnimation(true);
@@ -125,7 +124,7 @@ public class Zemar : MonoBehaviour
             {
                 FindObjectOfType<ScreenShake>().Shake(0.2f, 0.5f);
                 Debug.Log("Oulala je prend des degats");
-                TakeDamage(currentDamageToPlayer);
+                TakeDamage(damagetakenWhenHit);
                 if (zemarCurrentHealth <= 0)
                 {
                     Death();
@@ -148,7 +147,7 @@ public class Zemar : MonoBehaviour
     private void TakeDamage(float damage)
     {
         zemarCurrentHealth -= damage;
-        zemarHealthBar.value = zemarCurrentHealth;
+        zemarHealthBar.value = zemarCurrentHealth / 2;
         AkSoundEngine.PostEvent("playZemmarDmg", gameObject);
     }
 

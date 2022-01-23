@@ -17,6 +17,8 @@ public class PlayerMouvements : MonoBehaviour
     private SpriteRenderer spriteFeet;
     private bool hitInvulnerable = false;
     private Vector2  projection= Vector2.zero;
+
+    private int damageTakenByZemar = 5;
     private void Start()
     {
         
@@ -30,7 +32,7 @@ public class PlayerMouvements : MonoBehaviour
     {
         if(collision.tag == "Zemar")
         {
-            FindObjectOfType<Health>().DamagePlayer(8);
+            FindObjectOfType<Health>().DamagePlayer(damageTakenByZemar);
             GetHit(collision.transform.position);
         }
     }
@@ -116,5 +118,10 @@ public class PlayerMouvements : MonoBehaviour
     private void ResetCanPasSound()
     {
         canPlayPasSound = true;
+    }
+
+    public void SetCurrentDamageWhenHitByZemar(int pDamages)
+    {
+        damageTakenByZemar = pDamages;
     }
 }

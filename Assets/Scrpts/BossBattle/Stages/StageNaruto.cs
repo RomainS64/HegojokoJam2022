@@ -177,6 +177,8 @@ public class StageNaruto : Stage
 
     private void BulletHasHitZemar()
     {
+        zemar.player.SetCurrentDamageWhenHitByZemar(1);
+
         if(timerBeforeClonesMakeDamage!=null) StopCoroutine(timerBeforeClonesMakeDamage);
         StartCoroutine(DestroyAllClones());
         zemar.SetIsAmongClones(false);

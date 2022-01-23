@@ -54,12 +54,12 @@ public class StageNounoursRain : Stage
             int randomSpotToSpawnIndex;
             do
             {
-                randomSpotToSpawnIndex = Random.Range(0, pointSpawnNounours.Length - 1);
+                randomSpotToSpawnIndex = Random.Range(0, pointSpawnNounours.Length);
             } while (randomSpotToSpawnIndex == oldSpawnPointIndexUsed);
 
             oldSpawnPointIndexUsed = randomSpotToSpawnIndex;
             
-            Transform randomSpotToSpawn = pointSpawnNounours[Random.Range(0, pointSpawnNounours.Length - 1)];
+            Transform randomSpotToSpawn = pointSpawnNounours[Random.Range(0, pointSpawnNounours.Length)];
             Instantiate(enemyToSpawn, randomSpotToSpawn.position, randomSpotToSpawn.rotation);
 
             //Attendre le temps qu'il faut entre chaque spawn de monstre

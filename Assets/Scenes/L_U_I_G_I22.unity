@@ -931,6 +931,12 @@ MonoBehaviour:
   - {fileID: 888564261}
   - {fileID: 375131575}
   - {fileID: 1420618034}
+  - {fileID: 375131575}
+  - {fileID: 1709217891}
+  - {fileID: 375131575}
+  - {fileID: 888564261}
+  - {fileID: 375131575}
+  - {fileID: 1420618034}
 --- !u!1 &374039628
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,7 +997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageName: Waiting2Sec
-  durationWaiting: 5
+  damageZemarWhileStage: 2
+  durationWaiting: 2
 --- !u!4 &375131576
 Transform:
   m_ObjectHideFlags: 0
@@ -1509,15 +1516,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageName: MoveAround
+  damageZemarWhileStage: 2
   transformPointsRight:
   - {fileID: 208916604}
   - {fileID: 245923549}
   transformPointsLeft:
   - {fileID: 1203619884}
   - {fileID: 1210976535}
-  mixMaxNumDeplacement: {x: 2, y: 4}
-  speedZemarDeplacement: 0.3
-  durationToNextDeplacement: 7
+  mixMaxNumDeplacement: {x: 3, y: 3}
+  speedZemarDeplacement: 0.7
+  durationToNextDeplacement: 5
 --- !u!1 &598531791
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714539839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 822348837}
@@ -1960,6 +1968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageName: Naruto
+  damageZemarWhileStage: 20
   pointPositionDedoublement: {fileID: 9299417}
   pointPositionDedoublementOutOfScreen: {fileID: 598531792}
   speedZemarNaruto: 3
@@ -2742,7 +2751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374088360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2936,9 +2945,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageName: Nounours Rain
+  damageZemarWhileStage: 6
   positionFlyingZemar: {fileID: 1582675927}
   enemyToSpawn: {fileID: 2503025758271125957, guid: 07b212b888d5f744a84964c4139de588, type: 3}
-  mixMaxNumSpawns: {x: 35, y: 60}
+  mixMaxNumSpawns: {x: 45, y: 75}
   speedZemarDeplacement: 3
   durationlaunchSpawnAfterZamarFlies: 5
   durationBetweenSpawns: 0.2
@@ -3443,6 +3453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageName: Stage dash
+  damageZemarWhileStage: 10
   positionDashesRight:
   - {fileID: 954280505}
   - {fileID: 1330389809}
@@ -4159,6 +4170,14 @@ PrefabInstance:
       propertyPath: defaultPosition
       value: 
       objectReference: {fileID: 693152053}
+    - target: {fileID: 4690954530662837137, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: damagetakenWhenHit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690954530662837137, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: zemarCurrentHealth
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 4690954530662837137, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
       propertyPath: currentDamageToPlayer
       value: 5
