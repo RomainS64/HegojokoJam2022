@@ -72,7 +72,6 @@ public class StageNaruto : Stage
     private IEnumerator TimerBeforeClonesMakeDamage()
     {
         yield return new WaitForSeconds(durationBeforeSpawnClones);
-        Debug.Log("TimerBeforeClonesMakeDamage");
         BulletHasHitClone();
     }
 
@@ -142,7 +141,6 @@ public class StageNaruto : Stage
 
             numCloneOnScreen++;
         }
-        Debug.Log("Wtf");
     }
 
     private IEnumerator DestroyAllClones()
@@ -179,7 +177,6 @@ public class StageNaruto : Stage
 
     private void BulletHasHitZemar()
     {
-        Debug.Log(" BulletHasHitZemar();");
         if(timerBeforeClonesMakeDamage!=null) StopCoroutine(timerBeforeClonesMakeDamage);
         StartCoroutine(DestroyAllClones());
         zemar.SetIsAmongClones(false);

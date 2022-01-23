@@ -24,6 +24,8 @@ public class Zemar : MonoBehaviour
     public event EventHandler OnBulletHitsEvent;
     public event EventHandler OnEndNarutoAnimation;
 
+    public GameObject bubullePrefab;
+
     private bool isAmongClones;
 
     // Start is called before the first frame update
@@ -109,8 +111,13 @@ public class Zemar : MonoBehaviour
             else
             {
                 Debug.Log("Oulala je prend des degats");
+
+
                 Destroy(collision.gameObject);
             }
+
+            GameObject bubulle = Instantiate(bubullePrefab);
+            bubulle.transform.position = transform.position + new Vector3(0, 0, -1);
         }
     }
 
