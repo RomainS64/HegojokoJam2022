@@ -6,7 +6,7 @@ public class Attack : MonoBehaviour
 {
     private bool hasAttack = false;
     private float cooldown = 4f;
-    private int damages = 3;
+    private int damages = 5;
     Enemy enemy;
     private void Start()
     {

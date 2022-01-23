@@ -22,7 +22,7 @@ public class WaveSpawner : MonoBehaviour
         public float timeBeforeStartingWave;
         public bool isScrolling;
     }
-
+    public GameObject endFade;
     public int waveIndexToStart = 0;
 
     private GameObject gameManager;
@@ -110,12 +110,16 @@ public class WaveSpawner : MonoBehaviour
             {
                 
                 EndPreparation.SetEndX(scroller.transform.position.x);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                endFade.SetActive(true);
+                Invoke(nameof(LoadNextScene), 2f);
                 Debug.Log("gg la street t'as gagné");
             }
         }
     }
-
+    private void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
     private void PrepareNextWave()
     {
         currentWaveIndex++;
