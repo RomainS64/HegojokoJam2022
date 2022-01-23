@@ -47,6 +47,7 @@ public class WaveSpawner : MonoBehaviour
 
     public void StartFirstWave()
     {
+        EndPreparation.ResetPrefs();
         StartCoroutine(StartNextWave(currentWaveIndex));
     }
 
@@ -107,6 +108,7 @@ public class WaveSpawner : MonoBehaviour
             }
             else//S'il n'y en a plus
             {
+                EndPreparation.SetEndX(scroller.transform.position.x);
                 Debug.Log("gg la street t'as gagné");
             }
         }
