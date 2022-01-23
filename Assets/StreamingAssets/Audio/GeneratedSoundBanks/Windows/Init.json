@@ -16,10 +16,18 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "3842981942",
+    "Hash": "1996223741",
     "ObjectPath": "Init",
     "ShortName": "Init",
-    "Path": "Init.bnk"
+    "Path": "Init.bnk",
+    "GameParameters": [
+     {
+      "Id": "4056684167",
+      "Name": "master",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\master",
+      "GUID": "{568D5A80-C7AE-49E9-BE5E-9F626524A7B1}"
+     }
+    ]
    }
   ]
  }

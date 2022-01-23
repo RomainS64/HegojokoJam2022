@@ -19,7 +19,6 @@ namespace AK
         static const AkUniqueID PLAYDMG = 1903876501U;
         static const AkUniqueID PLAYGUNSOUND = 138404804U;
         static const AkUniqueID PLAYPLANE = 3093616831U;
-        static const AkUniqueID PLAYPUNCHLINE = 3591998379U;
         static const AkUniqueID PLAYWALK = 2097335752U;
         static const AkUniqueID PLAYZEMMARDMG = 3829630293U;
         static const AkUniqueID PLAYZEMMARLAUGH = 2304268690U;

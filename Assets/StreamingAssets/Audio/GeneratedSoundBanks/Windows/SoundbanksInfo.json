@@ -168,7 +168,7 @@
     "Id": "1069431850",
     "GUID": "{9A3FD47A-39E4-4D02-A594-2643084AE054}",
     "Language": "SFX",
-    "Hash": "1590439748",
+    "Hash": "2246858167",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
     "ShortName": "Player",
     "Path": "Player.bnk",
@@ -250,16 +250,6 @@
       ]
      },
      {
-      "Id": "3591998379",
-      "Name": "playPunchline",
-      "ObjectPath": "\\Events\\Default Work Unit\\playPunchline",
-      "GUID": "{B48BA2C0-E7BA-42CE-AE2C-9C935DD9AC3B}",
-      "MaxAttenuation": "0.",
-      "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
-     },
-     {
       "Id": "2097335752",
       "Name": "playWalk",
       "ObjectPath": "\\Events\\Default Work Unit\\playWalk",
@@ -282,10 +272,18 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "3842981942",
+    "Hash": "1996223741",
     "ObjectPath": "Init",
     "ShortName": "Init",
-    "Path": "Init.bnk"
+    "Path": "Init.bnk",
+    "GameParameters": [
+     {
+      "Id": "4056684167",
+      "Name": "master",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\master",
+      "GUID": "{568D5A80-C7AE-49E9-BE5E-9F626524A7B1}"
+     }
+    ]
    },
    {
     "Id": "1551306167",

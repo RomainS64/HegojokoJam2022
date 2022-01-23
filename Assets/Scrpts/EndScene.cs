@@ -9,7 +9,7 @@ public class EndScene : MonoBehaviour
     
 
     [SerializeField] private float scrollTime;
-    [SerializeField] private GameObject deathBodyPrefab;
+    [SerializeField] private GameObject[] deathBodyPrefabs;
     [SerializeField] private Text T2, T3;
     Camera camera;
     IEnumerator scroller;
@@ -38,7 +38,7 @@ public class EndScene : MonoBehaviour
 
         for (int i = 1; i <= nbKills; i++)
         {
-            GameObject newBody = Instantiate(deathBodyPrefab);
+            GameObject newBody = Instantiate(deathBodyPrefabs[Random.Range(0,deathBodyPrefabs.Length)]);
             Debug.Log("Instantiate " + i + ":" + "(" + PlayerPrefs.GetFloat("posX" + i, 0) + "," + PlayerPrefs.GetFloat("posY" + i, 0));
             newBody.transform.position = new Vector3(
                 PlayerPrefs.GetFloat("posX" +i,0),

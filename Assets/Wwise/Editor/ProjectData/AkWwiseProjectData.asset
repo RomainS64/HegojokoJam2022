@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 48bc07bd14c0464c98dd71d3c5010e98
     GuidInternal: 
-    m_lastTime: -8585587056876795887
+    m_lastTime: -8585586602288635828
     List:
     - name: Ennemi
       guid: bb810254a5d64f4986c04509cddbf508
@@ -443,7 +443,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 62fc83d0f83bd4489bbe0b1ae50dda40
     GuidInternal: 
-    m_lastTime: -8585586633533846388
+    m_lastTime: -8585586602288525837
     List:
     - name: playBisounoursDeath
       guid: 7b854b36857f364c8f1f631f7b062ef1
@@ -494,8 +494,8 @@ MonoBehaviour:
         guid: 275f4a96d99f604b8249133dcaff460a
       Path: Events\Default Work Unit\playDmg
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.628986
+      minDuration: 0.285749
     - name: playGunSound
       guid: 970d554f08b39642b18414e8d5d41c2d
       id: 138404804
@@ -863,7 +863,7 @@ MonoBehaviour:
     m_lastTime: -8585587478219057442
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000130000001400000015000000
+  ExpandedWaapiItemIds: 01000000060000000700000013000000140000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
