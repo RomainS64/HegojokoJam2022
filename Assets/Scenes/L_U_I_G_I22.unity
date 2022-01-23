@@ -3591,7 +3591,7 @@ MonoBehaviour:
   speedZemarDash: 2.5
   speedZemarGoingOffScreen: 2
   minMaxNumDashes: {x: 6, y: 10}
-  durationBetweenZemarDashes: 1
+  durationBetweenZemarDashes: 1.3
   durationRedSquareBeforeDash: 1
   durationBeforeZemarMakeDashes: 3
   durationAfterZemarResetPosition: 3
