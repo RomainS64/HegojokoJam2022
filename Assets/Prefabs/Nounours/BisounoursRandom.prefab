@@ -70,6 +70,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d20011ac73d924cad9883b14e6dee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 4
+  damages: 5
   enemy: {fileID: 2545934334866638314}
 --- !u!1 &1747903182911069275
 GameObject:
@@ -141,6 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d20011ac73d924cad9883b14e6dee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 4
+  damages: 5
   enemy: {fileID: 2545934334866638314}
 --- !u!1 &2545934334866638312
 GameObject:
@@ -202,6 +206,7 @@ MonoBehaviour:
   spriteDesYeux: {fileID: 2545934335186315452}
   everyNounoursColors: {fileID: 11400000, guid: 5e648b9f6d031be4983726d3117520e3, type: 2}
   animator: {fileID: 4796331136569485618}
+  colliderNounours: {fileID: 8071070013875111759}
 --- !u!61 &8071070013875111759
 BoxCollider2D:
   m_ObjectHideFlags: 0

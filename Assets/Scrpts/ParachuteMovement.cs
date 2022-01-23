@@ -5,21 +5,20 @@ using UnityEngine;
 public class ParachuteMovement : MonoBehaviour
 {
     public float fallingSpeed = 10;
-    public float limitBeforeDestroy = -20;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float limitBeforeDestroy = -10;
+    public bool isSleeping = false;
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.down * fallingSpeed * Time.deltaTime);
-
-        if(transform.position.y < limitBeforeDestroy)
+        if(!isSleeping)
         {
-            Destroy(gameObject);
+            transform.Translate(Vector2.down * fallingSpeed * Time.deltaTime);
+
+            if (transform.position.y < limitBeforeDestroy)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
