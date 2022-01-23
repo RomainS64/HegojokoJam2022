@@ -7,6 +7,7 @@ using TMPro;
 
 public class MainMenuUI : MonoBehaviour
 {
+    public GameObject fade;
     public GameObject MainMenuPanel;
     public GameObject CreditsPanel;
 
@@ -19,13 +20,20 @@ public class MainMenuUI : MonoBehaviour
     public void PlayGame()
     {
         PlayButtonSound();
+        fade.SetActive(true);
+        Invoke(nameof(PlayGameDelay), 1f);
+    }
+    public void PlayGameDelay()
+    {
+        
+        
         SceneManager.LoadScene(2);
     }
-
 
     public void Credits()
     {
         PlayButtonSound();
+        fade.SetActive(true);
         MainMenuPanel.SetActive(false);
         CreditsPanel.SetActive(true);
     }
