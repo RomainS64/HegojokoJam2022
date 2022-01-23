@@ -25,6 +25,10 @@ public class StageNaruto : Stage
 
     private IEnumerator timerBeforeClonesMakeDamage;
     private int numCloneOnScreen;
+    private void Start()
+    {
+        base.Start();
+    }
     public override void OnStageStart()
     {
         zemar.canMakeDamage = false;
@@ -44,6 +48,7 @@ public class StageNaruto : Stage
     }
     public override void MakeActions()
     {
+        timerBeforeClonesMakeDamage = TimerBeforeClonesMakeDamage();
         zemar.Move(pointPositionDedoublement.transform.position, speedZemarNaruto);
         StartCoroutine(TimerBeforeDedoublement());
     }
@@ -102,7 +107,6 @@ public class StageNaruto : Stage
         zemar.Move(zemarCloneEndPosition[randomZemarPositionIndex].position, speedZemarClones);
 
         indexAlreadyUsed.Add(randomZemarPositionIndex);
-        //transformList.RemoveAt(randomZemarPositionIndex);
 
         //SET CLONE POSITION
         for (int i = 0; i < zemarCloneTransforms.Length - 1; i++)
@@ -181,7 +185,6 @@ public class StageNaruto : Stage
         SpawnZemarAndNarutoClonesAtRandomPoint();
         zemar.SetIsAmongClones(true);
 
-        timerBeforeClonesMakeDamage = TimerBeforeClonesMakeDamage();
         StartCoroutine(timerBeforeClonesMakeDamage);
     }
     private void OnBulletHitsClone_StageNaruto(object sender, EventArgs e)
