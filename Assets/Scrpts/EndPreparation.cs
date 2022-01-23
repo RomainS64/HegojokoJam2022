@@ -10,6 +10,7 @@ public class EndPreparation : MonoBehaviour
     }
     static public void AddKill(Vector3 pos,bool isPendu = false)
     {
+        Debug.Log("A:("+pos.x+","+pos.y+")");
         int id = PlayerPrefs.GetInt("nbKill", 0) + 1;
         PlayerPrefs.SetInt("nbKill",id);
         PlayerPrefs.SetFloat("posX" + id, pos.x);

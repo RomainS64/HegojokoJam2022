@@ -108,6 +108,7 @@ public class WaveSpawner : MonoBehaviour
             }
             else//S'il n'y en a plus
             {
+                SceneManager.LoadScene("L_U_I_G_I33");
                 EndPreparation.SetEndX(scroller.transform.position.x);
                 Debug.Log("gg la street t'as gagné");
             }
