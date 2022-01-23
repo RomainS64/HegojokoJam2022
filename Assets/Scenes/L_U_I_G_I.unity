@@ -3990,18 +3990,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heal
       objectReference: {fileID: 0}
-    - target: {fileID: 4856635235138566029, guid: 59c0fccbdf4f1564b83f7a7f04e66d49, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4856635235138566029, guid: 59c0fccbdf4f1564b83f7a7f04e66d49, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4856635235138566029, guid: 59c0fccbdf4f1564b83f7a7f04e66d49, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59c0fccbdf4f1564b83f7a7f04e66d49, type: 3}
 --- !u!1 &1582835942

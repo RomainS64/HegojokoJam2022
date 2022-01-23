@@ -19,6 +19,7 @@ public class Zemar : MonoBehaviour
     public float currentDamageToPlayer = 10;
     public bool isInvincible = false;
     public bool canMakeDamage = false;
+    public bool isDashing = false;
 
     private Animator animator;
     private Vector2 pointToMoveOn;
@@ -55,16 +56,18 @@ public class Zemar : MonoBehaviour
     {
         transform.position = Vector3.Lerp(transform.position, pointToMoveOn, zemarSpeed * Time.deltaTime);
 
-        if(player.transform.position.x < transform.position.x)
+        if(!isDashing)
         {
-            spriteRenderer.flipX = true;
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
+            if (player.transform.position.x < transform.position.x)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
         }
     }
-
     public void Move(Vector2 endPoint, float speed)
     {
         pointToMoveOn = endPoint;
@@ -91,6 +94,7 @@ public class Zemar : MonoBehaviour
     public void SetSpriteLookRight(bool lookRight)
     {
         spriteRenderer.flipX = lookRight;
+        Debug.Log(spriteRenderer.flipX);
     }
 
     public void ToggleLevitateAnimation(bool isLevitating)
@@ -121,7 +125,7 @@ public class Zemar : MonoBehaviour
             {
                 FindObjectOfType<ScreenShake>().Shake(0.2f, 0.5f);
                 Debug.Log("Oulala je prend des degats");
-                TakeDamage(5.0f);
+                TakeDamage(currentDamageToPlayer);
                 if (zemarCurrentHealth <= 0)
                 {
                     Death();
@@ -157,7 +161,6 @@ public class Zemar : MonoBehaviour
     {
         animator.SetBool("isLevingBras", isLevingBras);
     }
-
     private void Death()
     {
         FindObjectOfType<ScreenShake>().Shake(0.3f, 1.5f);
