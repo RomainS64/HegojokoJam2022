@@ -16,10 +16,29 @@
     "Id": "3991942870",
     "GUID": "{5F17FB2E-571A-4628-AD02-8B7841FB68BD}",
     "Language": "SFX",
-    "Hash": "3012300438",
+    "Hash": "260604596",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
-    "Path": "Music.bnk"
+    "Path": "Music.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3603175426",
+      "Name": "playCinematic",
+      "ObjectPath": "\\Events\\Default Work Unit\\playCinematic",
+      "GUID": "{F74DB379-F668-4354-A832-0481768FDD39}",
+      "DurationType": "OneShot",
+      "DurationMin": "17.63068",
+      "DurationMax": "17.63068",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "800988025",
+        "Language": "SFX",
+        "ShortName": "sonCinematique.wav",
+        "Path": "SFX\\sonCinematique_10C4C929.wem"
+       }
+      ]
+     }
+    ]
    }
   ]
  }

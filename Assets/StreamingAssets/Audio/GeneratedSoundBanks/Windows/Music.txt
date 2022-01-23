@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3603175426	playCinematic			\Default Work Unit\playCinematic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	800988025	sonCinematique	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\sonCinematique_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sonCinematique		3110180
+

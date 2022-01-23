@@ -89,7 +89,7 @@ public class Enemy : MonoBehaviour
         isDead = true;
         AkSoundEngine.PostEvent("playBisounoursDeath", gameObject);
         animator.SetTrigger("Sleep");
-        gameObject.tag = "NounoursMort";
+        colliderNounours.gameObject.tag = "NounoursMort";
         colliderNounours.enabled = false;
         if(followRoutine != null)StopCoroutine(followRoutine);
         Invoke(nameof(SetStatic), 2f);

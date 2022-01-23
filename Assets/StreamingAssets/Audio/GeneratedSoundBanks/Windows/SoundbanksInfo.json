@@ -81,6 +81,7 @@
     "Id": "692772953",
     "GUID": "{540281BB-D6A5-494F-86C0-4509CDDBF508}",
     "Language": "SFX",
+    "Hash": "3893748040",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Ennemi",
     "ShortName": "Ennemi",
     "Path": "Ennemi.bnk",
@@ -290,6 +291,7 @@
     "Id": "1551306167",
     "GUID": "{B5E8FC2F-A85A-4F28-8388-0E98301AB755}",
     "Language": "SFX",
+    "Hash": "2047956026",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI",
     "ShortName": "UI",
     "Path": "UI.bnk",
@@ -325,9 +327,29 @@
     "Id": "3991942870",
     "GUID": "{5F17FB2E-571A-4628-AD02-8B7841FB68BD}",
     "Language": "SFX",
+    "Hash": "260604596",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
-    "Path": "Music.bnk"
+    "Path": "Music.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3603175426",
+      "Name": "playCinematic",
+      "ObjectPath": "\\Events\\Default Work Unit\\playCinematic",
+      "GUID": "{F74DB379-F668-4354-A832-0481768FDD39}",
+      "DurationType": "OneShot",
+      "DurationMin": "17.63068",
+      "DurationMax": "17.63068",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "800988025",
+        "Language": "SFX",
+        "ShortName": "sonCinematique.wav",
+        "Path": "SFX\\sonCinematique_10C4C929.wem"
+       }
+      ]
+     }
+    ]
    }
   ]
  }
