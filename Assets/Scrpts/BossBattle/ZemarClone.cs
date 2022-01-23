@@ -7,12 +7,14 @@ public class ZemarClone : MonoBehaviour
 {
     private PlayerMouvements player;
     public SpriteRenderer spriteRenderer;
-    private Animator animator;
+    public Animator animator;
 
     private Vector2 pointToMoveOn;
     private float zemarSpeed;
 
     public event EventHandler OnBulletHitsEvent;
+
+    public GameObject bubullePrefab;
 
     void Start()
     {
@@ -42,13 +44,16 @@ public class ZemarClone : MonoBehaviour
 
     public void TriggerPoufAnimation()
     {
-        Debug.Log("Pouf");
-        //animator.SetTrigger("Pouf");
+        Debug.Log("WHALALA2");
+        animator.SetTrigger("Pouf");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Bullet"))
         {
+            GameObject bubulle = Instantiate(bubullePrefab);
+            bubulle.transform.position = transform.position + new Vector3(0, 0, -1);
+
             Destroy(collision.gameObject);
             if (OnBulletHitsEvent != null) OnBulletHitsEvent(this, EventArgs.Empty);
         }

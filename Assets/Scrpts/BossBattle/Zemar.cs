@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class Zemar : MonoBehaviour
 {
@@ -24,7 +25,12 @@ public class Zemar : MonoBehaviour
     public event EventHandler OnBulletHitsEvent;
     public event EventHandler OnEndNarutoAnimation;
 
+    public GameObject bubullePrefab;
+
+    [SerializeField] private Slider zemarHealthBar;
     private bool isAmongClones;
+
+    private float zemarCurrentHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +41,9 @@ public class Zemar : MonoBehaviour
         transform.position = defaultPosition.position;
         pointToMoveOn = defaultPosition.position;
         zemarSpeed = 1;
+
+        zemarCurrentHealth = 100;
+        zemarHealthBar.value = zemarCurrentHealth;
 
         ToggleLevitateAnimation(true);
     }
@@ -109,13 +118,34 @@ public class Zemar : MonoBehaviour
             else
             {
                 Debug.Log("Oulala je prend des degats");
+                TakeDamage(5.0f);
+                if (zemarCurrentHealth <= 0)
+                {
+                    Death();
+                }
+
+
                 Destroy(collision.gameObject);
             }
+
+            GameObject bubulle = Instantiate(bubullePrefab);
+            bubulle.transform.position = transform.position + new Vector3(0, 0, -1);
         }
     }
 
     public void AnimatorKeyEvent_TriggerCloneSpawns()
     {
         if (OnEndNarutoAnimation != null) OnEndNarutoAnimation(this, EventArgs.Empty);
+    }
+
+    private void TakeDamage(float damage)
+    {
+        zemarCurrentHealth -= damage;
+        zemarHealthBar.value = zemarCurrentHealth;
+    }
+
+    private void Death()
+    {
+        Debug.Log("Oh non je suis mort et en fait je suis Zemmour");
     }
 }

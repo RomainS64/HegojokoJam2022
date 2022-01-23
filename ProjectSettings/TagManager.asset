@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - NounoursMort
   - NounoursAttackZone
+  - ZemarClone
   layers:
   - Default
   - TransparentFX

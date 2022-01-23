@@ -272,6 +272,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 2434360245458899026, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6103705171701696162, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
       propertyPath: m_Name
       value: Player
