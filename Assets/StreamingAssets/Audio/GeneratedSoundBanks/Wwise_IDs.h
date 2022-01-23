@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAYBISOUNOURSDEATH = 1155634196U;
         static const AkUniqueID PLAYBUTTON = 1843531235U;
+        static const AkUniqueID PLAYCINEMATIC = 3603175426U;
         static const AkUniqueID PLAYDMG = 1903876501U;
         static const AkUniqueID PLAYGUNSOUND = 138404804U;
         static const AkUniqueID PLAYPLANE = 3093616831U;

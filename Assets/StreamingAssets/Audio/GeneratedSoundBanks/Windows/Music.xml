@@ -8,10 +8,20 @@
 		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="3991942870" GUID="{5F17FB2E-571A-4628-AD02-8B7841FB68BD}" Language="SFX" Hash="3012300438">
+		<SoundBank Id="3991942870" GUID="{5F17FB2E-571A-4628-AD02-8B7841FB68BD}" Language="SFX" Hash="260604596">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3603175426" Name="playCinematic" ObjectPath="\Events\Default Work Unit\playCinematic" GUID="{F74DB379-F668-4354-A832-0481768FDD39}" DurationType="OneShot" DurationMin="17.63068" DurationMax="17.63068">
+					<IncludedMemoryFiles>
+						<File Id="800988025" Language="SFX">
+							<ShortName>sonCinematique.wav</ShortName>
+							<Path>SFX\sonCinematique_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
