@@ -924,7 +924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stages:
   - {fileID: 375131575}
-  - {fileID: 888564261}
+  - {fileID: 544640614}
   - {fileID: 375131575}
   - {fileID: 1709217891}
   - {fileID: 375131575}
@@ -1968,7 +1968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageName: Naruto
-  damageZemarWhileStage: 20
+  damageZemarWhileStage: 12
   pointPositionDedoublement: {fileID: 9299417}
   pointPositionDedoublementOutOfScreen: {fileID: 598531792}
   speedZemarNaruto: 3
@@ -3578,7 +3578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageName: Stage dash
-  damageZemarWhileStage: 10
+  damageZemarWhileStage: 5
   positionDashesRight:
   - {fileID: 954280505}
   - {fileID: 1330389809}
@@ -3591,9 +3591,9 @@ MonoBehaviour:
   speedZemarDash: 2.5
   speedZemarGoingOffScreen: 2
   minMaxNumDashes: {x: 6, y: 10}
-  durationBetweenZemarDashes: 1.1
-  durationRedSquareBeforeDash: 0.75
-  durationBeforeZemarMakeDashes: 2.5
+  durationBetweenZemarDashes: 1.3
+  durationRedSquareBeforeDash: 1
+  durationBeforeZemarMakeDashes: 3
   durationAfterZemarResetPosition: 3
   squareAnimator: {fileID: 449376720}
 --- !u!1 &1713301495

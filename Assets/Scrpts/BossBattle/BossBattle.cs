@@ -19,6 +19,8 @@ public class BossBattle : MonoBehaviour
 
         currentStage.OnStageStart();
 
+        currentStage.OnStageEndingEvent -= BossBattle_OnStageEnd;
+
         currentStage.OnStageEndingEvent += BossBattle_OnStageEnd;
     }
     private void BossBattle_OnStageEnd(object sender, EventArgs e)

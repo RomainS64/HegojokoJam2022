@@ -32,6 +32,8 @@ public class StageNaruto : Stage
     public override void OnStageStart()
     {
         zemar.canMakeDamage = false;
+        zemar.OnBulletHitsEvent -= OnBulletHitsZemar_StageNaruto;
+        zemar.OnEndNarutoAnimation -= OnEndNarutoAnimation_StageNaruto;
         zemar.OnBulletHitsEvent += OnBulletHitsZemar_StageNaruto;
         zemar.OnEndNarutoAnimation += OnEndNarutoAnimation_StageNaruto;
         zemar.ToggleLevitateAnimation(false);
