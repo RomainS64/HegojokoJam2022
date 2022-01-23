@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndScene : MonoBehaviour
 {
@@ -40,6 +41,8 @@ public class EndScene : MonoBehaviour
             camera.transform.position -= dir / 500;
             yield return new WaitForSeconds(scrollTime / 500);
         }
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene("Menu");
 
     }
 }
