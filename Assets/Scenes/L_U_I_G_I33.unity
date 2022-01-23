@@ -1141,7 +1141,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollTime: 25
-  deathBodyPrefab: {fileID: 8861360663676661833, guid: b6a082d8030153f47bcd197a233e57f9, type: 3}
+  deathBodyPrefabs:
+  - {fileID: 8861360663676661833, guid: b6a082d8030153f47bcd197a233e57f9, type: 3}
+  - {fileID: 8861360663676661833, guid: fd727f65640f30b49bf3831297f211f9, type: 3}
+  - {fileID: 8861360663676661833, guid: 98b72a3ef2bca7f469f2386d1e484090, type: 3}
+  - {fileID: 8861360663676661833, guid: 5850a92337b84ff4a82557a920d978b1, type: 3}
+  - {fileID: 8861360663676661833, guid: 4491616bba7791f4c8e67cf7eb39c432, type: 3}
+  - {fileID: 8861360663676661833, guid: c56ae17bf08f51740a74126475210758, type: 3}
+  - {fileID: 8861360663676661833, guid: ed3674304297f8f489daed65af04d501, type: 3}
+  - {fileID: 8861360663676661833, guid: 3da139b49238d224da917c107276d0e4, type: 3}
+  - {fileID: 8861360663676661833, guid: 2c5b73f0dbfc58648a82e067ae5bf4eb, type: 3}
   T2: {fileID: 1694022098}
   T3: {fileID: 792718315}
 --- !u!4 &1627109604
