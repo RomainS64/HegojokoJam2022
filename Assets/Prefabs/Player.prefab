@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 2953334625973413452, guid: 9bbdbed7a37eb7c469110515fab5c90f, type: 3}
-  coolDown: 0.5
+  coolDown: 0.4
   weaponMouth: {fileID: 1213287079}
 --- !u!1 &2602183034035632602
 GameObject:

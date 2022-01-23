@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 6667626382146293499}
   m_Layer: 0
   m_Name: ParachuteEnemy
-  m_TagString: Nounours
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingSpeed: 0.5
-  limitBeforeDestroy: -10
+  limitBeforeDestroy: -4
   isSleeping: 0
 --- !u!61 &6667626382146293499
 BoxCollider2D:
