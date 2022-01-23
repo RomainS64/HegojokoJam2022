@@ -1,6 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
+	231602834	playMusicAtk			\Music\playMusicAtk	
+	583638717	playMusicGog			\Music\playMusicGog	
 	3603175426	playCinematic			\Default Work Unit\playCinematic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	186560011	MainTitle	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\MainTitle_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MusiqueIG\MainTitle\MainTitle		20625044
 	800988025	sonCinematique	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\sonCinematique_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sonCinematique		3110180
+	1054379730	musique	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\musique_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Musique\musique\musique		10738252
 

@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2ee861242862c24c9d66763a3da70ea4
     GuidInternal: 
-    m_lastTime: -8585587474395545706
+    m_lastTime: -8585586524417371800
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 48bc07bd14c0464c98dd71d3c5010e98
     GuidInternal: 
-    m_lastTime: -8585586602288635828
+    m_lastTime: -8585586500589006642
     List:
     - name: Ennemi
       guid: bb810254a5d64f4986c04509cddbf508
@@ -443,7 +443,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 62fc83d0f83bd4489bbe0b1ae50dda40
     GuidInternal: 
-    m_lastTime: -8585586602288525837
+    m_lastTime: -8585586504985600260
     List:
     - name: playBisounoursDeath
       guid: 7b854b36857f364c8f1f631f7b062ef1
@@ -479,6 +479,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.401916
       minDuration: 0.401916
+    - name: playCinematic
+      guid: 79b34df768f65443a8320481768fdd39
+      id: 3603175426
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 62fc83d0f83bd4489bbe0b1ae50dda40
+      - ElementName: playCinematic
+        ObjectType: 3
+        guid: 79b34df768f65443a8320481768fdd39
+      Path: Events\Default Work Unit\playCinematic
+      maxAttenuation: 0
+      maxDuration: 17.63068
+      minDuration: 17.63068
     - name: playDmg
       guid: 275f4a96d99f604b8249133dcaff460a
       id: 1903876501
@@ -530,23 +547,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 5.197365
       minDuration: 5.197365
-    - name: playPunchline
-      guid: c0a28bb4bae7ce42ae2c9c935dd9ac3b
-      id: 3591998379
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 62fc83d0f83bd4489bbe0b1ae50dda40
-      - ElementName: playPunchline
-        ObjectType: 3
-        guid: c0a28bb4bae7ce42ae2c9c935dd9ac3b
-      Path: Events\Default Work Unit\playPunchline
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: playWalk
       guid: 50896ff54a8ca540a6f7a2e130cf0115
       id: 2097335752
@@ -598,6 +598,53 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3.482558
       minDuration: 1.505628
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 2f467596c8107a47a076de7a3035ec5e
+    ParentPath: Events\Music
+    guid: 2f467596c8107a47a076de7a3035ec5e
+    GuidInternal: 
+    m_lastTime: -8585586497375826293
+    List:
+    - name: playMusicAtk
+      guid: b94d3bd0456a7d45a11334c4023bf26b
+      id: 231602834
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 2f467596c8107a47a076de7a3035ec5e
+      - ElementName: playMusicAtk
+        ObjectType: 3
+        guid: b94d3bd0456a7d45a11334c4023bf26b
+      Path: Events\Music\playMusicAtk
+      maxAttenuation: 0
+      maxDuration: 116.92129
+      minDuration: 116.92129
+    - name: playMusicGog
+      guid: 6e9f64f629df1a4dae7782aa50f1b34f
+      id: 583638717
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 2f467596c8107a47a076de7a3035ec5e
+      - ElementName: playMusicGog
+        ObjectType: 3
+        guid: 6e9f64f629df1a4dae7782aa50f1b34f
+      Path: Events\Music\playMusicGog
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -863,7 +910,7 @@ MonoBehaviour:
     m_lastTime: -8585587478219057442
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000060000000700000013000000140000001500000016000000
+  ExpandedWaapiItemIds: 01000000060000000700000012000000130000001400000015000000160000001700000032000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

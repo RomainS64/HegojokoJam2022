@@ -16,7 +16,7 @@
     "Id": "3991942870",
     "GUID": "{5F17FB2E-571A-4628-AD02-8B7841FB68BD}",
     "Language": "SFX",
-    "Hash": "260604596",
+    "Hash": "303809035",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
@@ -35,6 +35,38 @@
         "Language": "SFX",
         "ShortName": "sonCinematique.wav",
         "Path": "SFX\\sonCinematique_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "231602834",
+      "Name": "playMusicAtk",
+      "ObjectPath": "\\Events\\Music\\playMusicAtk",
+      "GUID": "{D03B4DB9-6A45-457D-A113-34C4023BF26B}",
+      "DurationType": "OneShot",
+      "DurationMin": "116.921288",
+      "DurationMax": "116.921288",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "186560011",
+        "Language": "SFX",
+        "ShortName": "MainTitle.wav",
+        "Path": "SFX\\MainTitle_D79FB2B7.wem"
+       }
+      ]
+     },
+     {
+      "Id": "583638717",
+      "Name": "playMusicGog",
+      "ObjectPath": "\\Events\\Music\\playMusicGog",
+      "GUID": "{F6649F6E-DF29-4D1A-AE77-82AA50F1B34F}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "1054379730",
+        "Language": "SFX",
+        "ShortName": "musique.wav",
+        "Path": "SFX\\musique_D79FB2B7.wem"
        }
       ]
      }

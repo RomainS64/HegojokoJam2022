@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="3991942870" GUID="{5F17FB2E-571A-4628-AD02-8B7841FB68BD}" Language="SFX" Hash="260604596">
+		<SoundBank Id="3991942870" GUID="{5F17FB2E-571A-4628-AD02-8B7841FB68BD}" Language="SFX" Hash="303809035">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -18,6 +18,22 @@
 						<File Id="800988025" Language="SFX">
 							<ShortName>sonCinematique.wav</ShortName>
 							<Path>SFX\sonCinematique_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="231602834" Name="playMusicAtk" ObjectPath="\Events\Music\playMusicAtk" GUID="{D03B4DB9-6A45-457D-A113-34C4023BF26B}" DurationType="OneShot" DurationMin="116.921288" DurationMax="116.921288">
+					<IncludedMemoryFiles>
+						<File Id="186560011" Language="SFX">
+							<ShortName>MainTitle.wav</ShortName>
+							<Path>SFX\MainTitle_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="583638717" Name="playMusicGog" ObjectPath="\Events\Music\playMusicGog" GUID="{F6649F6E-DF29-4D1A-AE77-82AA50F1B34F}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1054379730" Language="SFX">
+							<ShortName>musique.wav</ShortName>
+							<Path>SFX\musique_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

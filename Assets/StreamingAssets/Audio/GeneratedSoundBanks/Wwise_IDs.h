@@ -18,6 +18,8 @@ namespace AK
         static const AkUniqueID PLAYCINEMATIC = 3603175426U;
         static const AkUniqueID PLAYDMG = 1903876501U;
         static const AkUniqueID PLAYGUNSOUND = 138404804U;
+        static const AkUniqueID PLAYMUSICATK = 231602834U;
+        static const AkUniqueID PLAYMUSICGOG = 583638717U;
         static const AkUniqueID PLAYPLANE = 3093616831U;
         static const AkUniqueID PLAYWALK = 2097335752U;
         static const AkUniqueID PLAYZEMMARDMG = 3829630293U;
