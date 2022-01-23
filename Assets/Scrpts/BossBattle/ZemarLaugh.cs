@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerGrowl : MonoBehaviour
+public class ZemarLaugh : MonoBehaviour
 {
     private float timer;
     private bool canPlaySound = true;
@@ -14,7 +14,7 @@ public class PlayerGrowl : MonoBehaviour
         if (canPlaySound)
         {
             canPlaySound = false;
-            AkSoundEngine.PostEvent("playPunchline", gameObject);
+            AkSoundEngine.PostEvent("playZemmarLaugh", gameObject);
             Invoke(nameof(StopTimer), timer);
         }
     }
