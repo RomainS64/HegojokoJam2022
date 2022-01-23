@@ -51,7 +51,7 @@ public class PauseUI : MonoBehaviour
 
     private void PlayButtonSound()
     {
-        AkSoundEngine.PostEvent("playButtton", gameObject);
+        AkSoundEngine.PostEvent("playButton", gameObject);
     }
 
     private void TogglePauseUI(bool isActive)
