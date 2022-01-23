@@ -32,9 +32,6 @@ public class EndScene : MonoBehaviour
             T2.text = "Hopefully, you didn't get addict to Big C.";
             T3.text = "However, you killed " + nbKills + " innocents.";
         }
-        
-        
-
 
         for (int i = 1; i <= nbKills; i++)
         {
