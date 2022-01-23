@@ -16,7 +16,7 @@
     "Id": "1069431850",
     "GUID": "{9A3FD47A-39E4-4D02-A594-2643084AE054}",
     "Language": "SFX",
-    "Hash": "1590439748",
+    "Hash": "2246858167",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
     "ShortName": "Player",
     "Path": "Player.bnk",
@@ -96,16 +96,6 @@
         "Path": "SFX\\tir1_5E65B236.wem"
        }
       ]
-     },
-     {
-      "Id": "3591998379",
-      "Name": "playPunchline",
-      "ObjectPath": "\\Events\\Default Work Unit\\playPunchline",
-      "GUID": "{B48BA2C0-E7BA-42CE-AE2C-9C935DD9AC3B}",
-      "MaxAttenuation": "0.",
-      "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
      },
      {
       "Id": "2097335752",
