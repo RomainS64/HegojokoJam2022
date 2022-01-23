@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\",
+   "SourceFilesRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\.cache\\Windows\\",
+   "SoundBanksRoot": "F:\\devJeux\\HegoJokoWinterJam\\ZemmarEtLeGatoAlaFraiz\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "144077205",
+    "GUID": "{40200DD7-D46C-4A96-A216-66BE2DC0D470}",
+    "Language": "SFX",
+    "Hash": "779281217",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Zemmar",
+    "ShortName": "Zemmar",
+    "Path": "Zemmar.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3829630293",
+      "Name": "playZemmarDmg",
+      "ObjectPath": "\\Events\\Default Work Unit\\playZemmarDmg",
+      "GUID": "{A9357D65-685E-4A60-9506-8EBC13DC26B2}",
+      "MaxAttenuation": "0.",
+      "DurationType": "OneShot",
+      "DurationMin": "0.",
+      "DurationMax": "0."
+     },
+     {
+      "Id": "2304268690",
+      "Name": "playZemmarLaugh",
+      "ObjectPath": "\\Events\\Default Work Unit\\playZemmarLaugh",
+      "GUID": "{CB19B79A-BAB9-4099-A136-75FACF0B1D21}",
+      "MaxAttenuation": "0.",
+      "DurationType": "OneShot",
+      "DurationMin": "0.",
+      "DurationMax": "0."
+     }
+    ]
+   }
+  ]
+ }
+}

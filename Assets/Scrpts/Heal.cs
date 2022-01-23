@@ -12,6 +12,7 @@ public class Heal : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            EndPreparation.AddHeal();
             collision.gameObject.GetComponent<Health>().HealPlayer(healValue);
             Destroy(this.gameObject);
         }

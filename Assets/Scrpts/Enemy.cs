@@ -66,6 +66,8 @@ public class Enemy : MonoBehaviour
     }
     public void Kill()
     {
+        EndPreparation.AddKill(transform.position, isFlying);
+
         isDead = true;
         animator.SetTrigger("Sleep");
         gameObject.tag = "NounoursMort";
