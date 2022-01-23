@@ -78,6 +78,7 @@ public class Enemy : MonoBehaviour
     }
     public void Kill()
     {
+        FindObjectOfType<ScreenShake>().Shake(0.2f, 0.5f);
         EndPreparation.AddKill(transform.position, isFlying);
 
         if(isFlying)

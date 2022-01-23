@@ -119,6 +119,7 @@ public class Zemar : MonoBehaviour
             }
             else
             {
+                FindObjectOfType<ScreenShake>().Shake(0.2f, 0.5f);
                 Debug.Log("Oulala je prend des degats");
                 TakeDamage(5.0f);
                 if (zemarCurrentHealth <= 0)
@@ -159,6 +160,7 @@ public class Zemar : MonoBehaviour
 
     private void Death()
     {
+        FindObjectOfType<ScreenShake>().Shake(0.3f, 1.5f);
         fade.SetActive(true);
         Invoke(nameof(EndGame),2f);
         Debug.Log("Oh non je suis mort et en fait je suis Zemmour");
