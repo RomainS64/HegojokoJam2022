@@ -33,7 +33,6 @@ public class MainMenuUI : MonoBehaviour
     public void Credits()
     {
         PlayButtonSound();
-        fade.SetActive(true);
         MainMenuPanel.SetActive(false);
         CreditsPanel.SetActive(true);
     }
