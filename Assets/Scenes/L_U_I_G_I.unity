@@ -2918,7 +2918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endFade: {fileID: 158371464}
-  waveIndexToStart: 0
+  waveIndexToStart: 5
   waves:
   - enemiesAndSpawnParameters:
     - enemy: {fileID: 2545934334866638312, guid: 4f277e4fb75f6b445903e6aa365f54d7, type: 3}
