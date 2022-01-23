@@ -1,0 +1,4 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2304268690	playZemmarLaugh			\Default Work Unit\playZemmarLaugh	
+	3829630293	playZemmarDmg			\Default Work Unit\playZemmarDmg	
+
