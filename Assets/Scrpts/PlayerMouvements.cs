@@ -25,6 +25,14 @@ public class PlayerMouvements : MonoBehaviour
         animator = feet.GetComponent<Animator>();
         spriteFeet = feet.GetComponent<SpriteRenderer>();
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Zemar")
+        {
+            FindObjectOfType<Health>().DamagePlayer(8);
+            GetHit(collision.transform.position);
+        }
+    }
     public void GetHit(Vector3 position)
     {
         if (hitInvulnerable) return;

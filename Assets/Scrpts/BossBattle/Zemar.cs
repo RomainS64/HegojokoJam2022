@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Zemar : MonoBehaviour
 {
+    public GameObject fade;
     public Transform defaultPosition;
     public PlayerMouvements player;
 
@@ -146,6 +148,12 @@ public class Zemar : MonoBehaviour
 
     private void Death()
     {
+        fade.SetActive(true);
+        Invoke(nameof(EndGame),2f);
         Debug.Log("Oh non je suis mort et en fait je suis Zemmour");
+    }
+    private void EndGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

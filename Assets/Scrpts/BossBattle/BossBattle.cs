@@ -21,7 +21,6 @@ public class BossBattle : MonoBehaviour
 
         currentStage.OnStageEndingEvent += BossBattle_OnStageEnd;
     }
-
     private void BossBattle_OnStageEnd(object sender, EventArgs e)
     {
         Debug.Log("Start next stage");
