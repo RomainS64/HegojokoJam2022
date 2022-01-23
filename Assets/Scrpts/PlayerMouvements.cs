@@ -9,6 +9,7 @@ public class PlayerMouvements : MonoBehaviour
     [SerializeField] private Transform topY, downY;
     [SerializeField] private GameObject feet;
 
+    private bool canPlayPasSound = true;
     private Camera camera;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
@@ -90,7 +91,13 @@ public class PlayerMouvements : MonoBehaviour
         rb.velocity = newVelocity+projection;
         if (rb.velocity.x != 0 || rb.velocity.y != 0)
         {
-            AkSoundEngine.PostEvent("playWalk", gameObject);
+            if (canPlayPasSound)
+            {
+                canPlayPasSound = false;
+                AkSoundEngine.PostEvent("playWalk", gameObject);
+                Invoke(nameof(ResetCanPasSound), 0.5f);
+            }
+           
             animator.SetBool("isMoving", true);
             if (rb.velocity.x > 0)
             {
@@ -105,5 +112,9 @@ public class PlayerMouvements : MonoBehaviour
         {
             animator.SetBool("isMoving", false);
         }
+    }
+    private void ResetCanPasSound()
+    {
+        canPlayPasSound = true;
     }
 }
