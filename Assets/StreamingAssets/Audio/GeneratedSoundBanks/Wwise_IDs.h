@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID PLAYBISOUNOURSDEATH = 1155634196U;
         static const AkUniqueID PLAYBUTTON = 1843531235U;
-        static const AkUniqueID PLAYDEATH = 2840201783U;
         static const AkUniqueID PLAYDMG = 1903876501U;
         static const AkUniqueID PLAYGUNSOUND = 138404804U;
         static const AkUniqueID PLAYPLANE = 3093616831U;
@@ -27,6 +26,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MASTER = 4056684167U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;

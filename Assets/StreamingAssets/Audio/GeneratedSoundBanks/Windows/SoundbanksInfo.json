@@ -28,20 +28,52 @@
       "Name": "playZemmarDmg",
       "ObjectPath": "\\Events\\Default Work Unit\\playZemmarDmg",
       "GUID": "{A9357D65-685E-4A60-9506-8EBC13DC26B2}",
-      "MaxAttenuation": "0.",
       "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
+      "DurationMin": "0.221395",
+      "DurationMax": "0.248507",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "447867089",
+        "Language": "SFX",
+        "ShortName": "hit.wav",
+        "Path": "SFX\\hit_9E593462.wem"
+       }
+      ]
      },
      {
       "Id": "2304268690",
       "Name": "playZemmarLaugh",
       "ObjectPath": "\\Events\\Default Work Unit\\playZemmarLaugh",
       "GUID": "{CB19B79A-BAB9-4099-A136-75FACF0B1D21}",
-      "MaxAttenuation": "0.",
       "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
+      "DurationMin": "1.505628",
+      "DurationMax": "3.482558",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "194592823",
+        "Language": "SFX",
+        "ShortName": "ZemarRire\\ZemmourRire1GoldVersion.wav",
+        "Path": "SFX\\ZemarRire\\ZemmourRire1GoldVersion_10C4C929.wem"
+       },
+       {
+        "Id": "329883274",
+        "Language": "SFX",
+        "ShortName": "ZemarRire\\ZemmourRire3GoldVersion.wav",
+        "Path": "SFX\\ZemarRire\\ZemmourRire3GoldVersion_10C4C929.wem"
+       },
+       {
+        "Id": "689286709",
+        "Language": "SFX",
+        "ShortName": "ZemarRire\\ZemmourRire2GoldVersion.wav",
+        "Path": "SFX\\ZemarRire\\ZemmourRire2GoldVersion_10C4C929.wem"
+       },
+       {
+        "Id": "723131885",
+        "Language": "SFX",
+        "ShortName": "ZemarRire\\ZemmourRire4GoldVersion.wav",
+        "Path": "SFX\\ZemarRire\\ZemmourRire4GoldVersion_10C4C929.wem"
+       }
+      ]
      }
     ]
    },
@@ -49,7 +81,6 @@
     "Id": "692772953",
     "GUID": "{540281BB-D6A5-494F-86C0-4509CDDBF508}",
     "Language": "SFX",
-    "Hash": "2229329850",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Ennemi",
     "ShortName": "Ennemi",
     "Path": "Ennemi.bnk",
@@ -118,10 +149,17 @@
       "Name": "playPlane",
       "ObjectPath": "\\Events\\Default Work Unit\\playPlane",
       "GUID": "{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}",
-      "MaxAttenuation": "0.",
       "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
+      "DurationMin": "5.197365",
+      "DurationMax": "5.197365",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "341779427",
+        "Language": "SFX",
+        "ShortName": "plane.wav",
+        "Path": "SFX\\plane_10C4C929.wem"
+       }
+      ]
      }
     ]
    },
@@ -129,30 +167,69 @@
     "Id": "1069431850",
     "GUID": "{9A3FD47A-39E4-4D02-A594-2643084AE054}",
     "Language": "SFX",
-    "Hash": "3488054681",
+    "Hash": "1590439748",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Player",
     "ShortName": "Player",
     "Path": "Player.bnk",
     "IncludedEvents": [
      {
-      "Id": "2840201783",
-      "Name": "playDeath",
-      "ObjectPath": "\\Events\\Default Work Unit\\playDeath",
-      "GUID": "{5BA69027-8874-4256-A8D6-BC3E6A0C949D}",
-      "MaxAttenuation": "0.",
-      "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
-     },
-     {
       "Id": "1903876501",
       "Name": "playDmg",
       "ObjectPath": "\\Events\\Default Work Unit\\playDmg",
       "GUID": "{964A5F27-9FD9-4B60-8249-133DCAFF460A}",
-      "MaxAttenuation": "0.",
       "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
+      "DurationMin": "0.285749",
+      "DurationMax": "0.628986",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "205614228",
+        "Language": "SFX",
+        "ShortName": "poumNours\\p2.wav",
+        "Path": "SFX\\poumNours\\p2_CF9F3675.wem"
+       },
+       {
+        "Id": "281043171",
+        "Language": "SFX",
+        "ShortName": "poumNours\\p6.wav",
+        "Path": "SFX\\poumNours\\p6_23A8380C.wem"
+       },
+       {
+        "Id": "337423241",
+        "Language": "SFX",
+        "ShortName": "poumNours\\p8.wav",
+        "Path": "SFX\\poumNours\\p8_703C6BA6.wem"
+       },
+       {
+        "Id": "420302614",
+        "Language": "SFX",
+        "ShortName": "poumNours\\p1.wav",
+        "Path": "SFX\\poumNours\\p1_20F19892.wem"
+       },
+       {
+        "Id": "577086903",
+        "Language": "SFX",
+        "ShortName": "poumNours\\p4.wav",
+        "Path": "SFX\\poumNours\\p4_440887B4.wem"
+       },
+       {
+        "Id": "589048301",
+        "Language": "SFX",
+        "ShortName": "poumNours\\p5.wav",
+        "Path": "SFX\\poumNours\\p5_1BA24831.wem"
+       },
+       {
+        "Id": "607077797",
+        "Language": "SFX",
+        "ShortName": "poumNours\\p3.wav",
+        "Path": "SFX\\poumNours\\p3_896326C5.wem"
+       },
+       {
+        "Id": "1022995606",
+        "Language": "SFX",
+        "ShortName": "poumNours\\p7.wav",
+        "Path": "SFX\\poumNours\\p7_5DFB4C5C.wem"
+       }
+      ]
      },
      {
       "Id": "138404804",
@@ -204,7 +281,7 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "2691871305",
+    "Hash": "3842981942",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk"
@@ -213,7 +290,6 @@
     "Id": "1551306167",
     "GUID": "{B5E8FC2F-A85A-4F28-8388-0E98301AB755}",
     "Language": "SFX",
-    "Hash": "886477457",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI",
     "ShortName": "UI",
     "Path": "UI.bnk",
@@ -231,7 +307,7 @@
         "Id": "647900629",
         "Language": "SFX",
         "ShortName": "button.wav",
-        "Path": "SFX\\button_C34E0745.wem"
+        "Path": "SFX\\button_AF8D8D97.wem"
        }
       ]
      }

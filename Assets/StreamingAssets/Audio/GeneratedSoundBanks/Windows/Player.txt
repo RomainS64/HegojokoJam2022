@@ -2,13 +2,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	138404804	playGunSound			\Default Work Unit\playGunSound	
 	1903876501	playDmg			\Default Work Unit\playDmg	
 	2097335752	playWalk			\Default Work Unit\playWalk	
-	2840201783	playDeath			\Default Work Unit\playDeath	
 	3591998379	playPunchline			\Default Work Unit\playPunchline	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	396043502	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	205614228	p2	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\poumNours\p2_CF9F3675.wem		\Actor-Mixer Hierarchy\Default Work Unit\poumNours\p2		70812
+	281043171	p6	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\poumNours\p6_23A8380C.wem		\Actor-Mixer Hierarchy\Default Work Unit\poumNours\p6		81552
+	337423241	p8	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\poumNours\p8_703C6BA6.wem		\Actor-Mixer Hierarchy\Default Work Unit\poumNours\p8		107476
+	420302614	p1	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\poumNours\p1_20F19892.wem		\Actor-Mixer Hierarchy\Default Work Unit\poumNours\p1		50532
 	543468535	footstep	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\footstep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\footstep		45076
+	577086903	p4	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\poumNours\p4_440887B4.wem		\Actor-Mixer Hierarchy\Default Work Unit\poumNours\p4		64852
+	589048301	p5	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\poumNours\p5_1BA24831.wem		\Actor-Mixer Hierarchy\Default Work Unit\poumNours\p5		57396
+	607077797	p3	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\poumNours\p3_896326C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\poumNours\p3		91696
 	999528939	gunSound	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\tir1_5E65B236.wem		\Actor-Mixer Hierarchy\Default Work Unit\gunSound		80268
+	1022995606	p7	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\poumNours\p7_5DFB4C5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\poumNours\p7		111080
 

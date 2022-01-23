@@ -2,3 +2,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2304268690	playZemmarLaugh			\Default Work Unit\playZemmarLaugh	
 	3829630293	playZemmarDmg			\Default Work Unit\playZemmarDmg	
 
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	194592823	ZemmourRire1GoldVersion	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\ZemarRire\ZemmourRire1GoldVersion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ZemarRire\ZemmourRire1GoldVersion		473772
+	329883274	ZemmourRire3GoldVersion	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\ZemarRire\ZemmourRire3GoldVersion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ZemarRire\ZemmourRire3GoldVersion		204864
+	447867089	hit	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\hit_9E593462.wem		\Actor-Mixer Hierarchy\Default Work Unit\hit		41504
+	689286709	ZemmourRire2GoldVersion	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\ZemarRire\ZemmourRire2GoldVersion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ZemarRire\ZemmourRire2GoldVersion		301120
+	723131885	ZemmourRire4GoldVersion	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\ZemarRire\ZemmourRire4GoldVersion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ZemarRire\ZemmourRire4GoldVersion		322732
+

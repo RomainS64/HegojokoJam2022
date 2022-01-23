@@ -125,7 +125,7 @@ public class Zemar : MonoBehaviour
             {
                 FindObjectOfType<ScreenShake>().Shake(0.2f, 0.5f);
                 Debug.Log("Oulala je prend des degats");
-                TakeDamage(5.0f);
+                TakeDamage(currentDamageToPlayer);
                 if (zemarCurrentHealth <= 0)
                 {
                     Death();
