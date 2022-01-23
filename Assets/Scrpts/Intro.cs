@@ -33,6 +33,6 @@ public class Intro : MonoBehaviour
         fadeCanvas.SetActive(false);
         InGameCanvas.SetActive(true);
         waveSpawner.StartFirstWave();
-
+        AkSoundEngine.PostEvent("playMusicGog", gameObject);
     }
 }
