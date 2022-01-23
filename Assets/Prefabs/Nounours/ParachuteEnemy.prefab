@@ -213,7 +213,7 @@ MonoBehaviour:
   tagTarget: Player
   isFlying: 1
   isDead: 0
-  speed: 2
+  speed: 5
   timeBetweenAttacks: 4
   damage: 5
   spriteRenderer: {fileID: 3143730580517780926}
