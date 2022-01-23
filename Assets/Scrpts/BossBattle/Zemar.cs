@@ -146,6 +146,16 @@ public class Zemar : MonoBehaviour
         zemarHealthBar.value = zemarCurrentHealth;
     }
 
+    public void ToggleWalking(bool isWalking)
+    {
+        animator.SetBool("isWalking", isWalking);
+    }
+
+    public void ToggleLeveBras(bool isLevingBras)
+    {
+        animator.SetBool("isLevingBras", isLevingBras);
+    }
+
     private void Death()
     {
         fade.SetActive(true);

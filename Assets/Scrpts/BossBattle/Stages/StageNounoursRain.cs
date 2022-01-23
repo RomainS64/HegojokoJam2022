@@ -42,6 +42,7 @@ public class StageNounoursRain : Stage
     {
         //Animations... tout le bordel.
         yield return new WaitForSeconds(durationlaunchSpawnAfterZamarFlies);
+        zemar.ToggleLeveBras(true);
         StartCoroutine(SpawnFallingNounours());
     }
 
@@ -70,6 +71,7 @@ public class StageNounoursRain : Stage
     private IEnumerator WaitForNounoursToFall()
     {
         zemar.MoveToDefaultPosition(speedZemarDeplacement);
+        zemar.ToggleLeveBras(false);
 
         yield return new WaitForSeconds(durationAfterLastNounoursSpawns);
 

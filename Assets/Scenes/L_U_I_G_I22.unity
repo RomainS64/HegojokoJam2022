@@ -778,7 +778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stages:
   - {fileID: 375131575}
-  - {fileID: 544640614}
+  - {fileID: 1420618034}
 --- !u!1 &374039628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,13 +3275,21 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4690954530752845670, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b79772fc6b9a9444a2c05de89a606a9, type: 3}
+    - target: {fileID: 4690954530752845670, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4690954530752845671, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4690954530752845671, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.15
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4690954529858671232, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}

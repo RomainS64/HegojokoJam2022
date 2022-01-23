@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebfa12280097c5a40bfd6db54b959c43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fade: {fileID: 0}
   defaultPosition: {fileID: 0}
   player: {fileID: 0}
   positionToAppearFromRightSide: {fileID: 0}
@@ -85,6 +86,8 @@ MonoBehaviour:
   currentDamageToPlayer: 10
   isInvincible: 0
   canMakeDamage: 0
+  bubullePrefab: {fileID: 0}
+  zemarHealthBar: {fileID: 0}
 --- !u!95 &4690954530662837139
 Animator:
   serializedVersion: 3
@@ -120,10 +123,10 @@ BoxCollider2D:
   m_Offset: {x: -0.030276284, y: 0.064229965}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 32, y: 32}
+    newSize: {x: 32, y: 32}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0

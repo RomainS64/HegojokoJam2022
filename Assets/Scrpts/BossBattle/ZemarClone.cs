@@ -44,7 +44,6 @@ public class ZemarClone : MonoBehaviour
 
     public void TriggerPoufAnimation()
     {
-        Debug.Log("WHALALA2");
         animator.SetTrigger("Pouf");
     }
     private void OnTriggerEnter2D(Collider2D collision)
