@@ -109,6 +109,7 @@ public class Zemar : MonoBehaviour
             else
             {
                 Debug.Log("Oulala je prend des degats");
+                Destroy(collision.gameObject);
             }
         }
     }

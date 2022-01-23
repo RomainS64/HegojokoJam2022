@@ -44,11 +44,13 @@ public class StageNaruto : Stage
         zemar.canMakeDamage = false;
         zemar.ToggleLevitateAnimation(true);
 
+        zemar.OnBulletHitsEvent -= OnBulletHitsZemar_StageNaruto;
+        zemar.OnEndNarutoAnimation -= OnEndNarutoAnimation_StageNaruto;
+
         base.OnStageEnd();
     }
     public override void MakeActions()
     {
-        timerBeforeClonesMakeDamage = TimerBeforeClonesMakeDamage();
         zemar.Move(pointPositionDedoublement.transform.position, speedZemarNaruto);
         StartCoroutine(TimerBeforeDedoublement());
     }
@@ -70,6 +72,7 @@ public class StageNaruto : Stage
     private IEnumerator TimerBeforeClonesMakeDamage()
     {
         yield return new WaitForSeconds(durationBeforeSpawnClones);
+        Debug.Log("TimerBeforeClonesMakeDamage");
         BulletHasHitClone();
     }
 
@@ -160,7 +163,11 @@ public class StageNaruto : Stage
     }
     private void BulletHasHitClone()
     {
-        StopCoroutine(timerBeforeClonesMakeDamage);
+        if (timerBeforeClonesMakeDamage != null)
+        {
+            StopCoroutine(timerBeforeClonesMakeDamage);
+        }
+
         StartCoroutine(DestroyAllClones());
         zemar.SetIsAmongClones(false);
 
@@ -172,7 +179,8 @@ public class StageNaruto : Stage
 
     private void BulletHasHitZemar()
     {
-        StopCoroutine(timerBeforeClonesMakeDamage);
+        Debug.Log(" BulletHasHitZemar();");
+        if(timerBeforeClonesMakeDamage!=null) StopCoroutine(timerBeforeClonesMakeDamage);
         StartCoroutine(DestroyAllClones());
         zemar.SetIsAmongClones(false);
 
@@ -181,10 +189,11 @@ public class StageNaruto : Stage
 
     // --------------------------- EVENTS ------------------------
     private void OnEndNarutoAnimation_StageNaruto(object sender, EventArgs e)
-    {//
+    {
         SpawnZemarAndNarutoClonesAtRandomPoint();
         zemar.SetIsAmongClones(true);
 
+        timerBeforeClonesMakeDamage = TimerBeforeClonesMakeDamage();
         StartCoroutine(timerBeforeClonesMakeDamage);
     }
     private void OnBulletHitsClone_StageNaruto(object sender, EventArgs e)

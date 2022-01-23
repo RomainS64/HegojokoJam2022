@@ -49,6 +49,7 @@ public class ZemarClone : MonoBehaviour
     {
         if (collision.CompareTag("Bullet"))
         {
+            Destroy(collision.gameObject);
             if (OnBulletHitsEvent != null) OnBulletHitsEvent(this, EventArgs.Empty);
         }
     }

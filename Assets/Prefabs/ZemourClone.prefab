@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZemourClone
       objectReference: {fileID: 0}
+    - target: {fileID: 4690954530662837135, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: m_TagString
+      value: ZemarClone
+      objectReference: {fileID: 0}
     - target: {fileID: 4690954530662837136, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
       propertyPath: m_RootOrder
       value: 0
