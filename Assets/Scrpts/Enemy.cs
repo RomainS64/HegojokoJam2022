@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
 
     public virtual void Start()
     {
+
        target = GameObject.FindGameObjectWithTag(tagTarget).transform;
        SetRandomSpriteColor();
        StartRoutine();
