@@ -144,6 +144,7 @@ public class Zemar : MonoBehaviour
     {
         zemarCurrentHealth -= damage;
         zemarHealthBar.value = zemarCurrentHealth;
+        AkSoundEngine.PostEvent("playZemmarDmg", gameObject);
     }
 
     public void ToggleWalking(bool isWalking)
