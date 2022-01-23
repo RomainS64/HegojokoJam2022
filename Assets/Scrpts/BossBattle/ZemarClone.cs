@@ -6,7 +6,7 @@ using UnityEngine;
 public class ZemarClone : MonoBehaviour
 {
     private PlayerMouvements player;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     private Animator animator;
 
     private Vector2 pointToMoveOn;
@@ -17,7 +17,6 @@ public class ZemarClone : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerMouvements>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
 
@@ -43,7 +42,8 @@ public class ZemarClone : MonoBehaviour
 
     public void TriggerPoufAnimation()
     {
-        animator.SetTrigger("Pouf");
+        Debug.Log("Pouf");
+        //animator.SetTrigger("Pouf");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

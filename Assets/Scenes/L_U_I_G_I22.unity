@@ -1183,13 +1183,13 @@ MonoBehaviour:
   speedZemarNaruto: 3
   speedZemarTraversingPlayer: 10
   speedZemarClones: 6
-  traversingMultiplier: 20
+  traversingMultiplier: 1
   durationBeforeDedoublement: 3
   durationBeforeSpawnClones: 6
   durationBeforeClonesMakeDamage: 4
   durationBeforeDestroyingClones: 2
   durationBeforeZemarReappear: 1
-  durationBeforeEndOfStage: 1
+  durationBeforeEndOfStage: 3
   zemarCloneTransforms:
   - {fileID: 1550715043}
   - {fileID: 1227373150}
@@ -1206,10 +1206,10 @@ MonoBehaviour:
   - {fileID: 2097824383}
   zemarClonesPrefab:
   - {fileID: 513476870730275593, guid: b23a002edbc324a47b49b59949432f20, type: 3}
-  - {fileID: 513476870730275593, guid: b23a002edbc324a47b49b59949432f20, type: 3}
-  - {fileID: 513476870730275593, guid: b23a002edbc324a47b49b59949432f20, type: 3}
-  - {fileID: 513476870730275593, guid: b23a002edbc324a47b49b59949432f20, type: 3}
-  - {fileID: 513476870730275593, guid: b23a002edbc324a47b49b59949432f20, type: 3}
+  - {fileID: 513476870730275593, guid: 5ce49e307cf7ce24cb2a5fdb362b2419, type: 3}
+  - {fileID: 513476870730275593, guid: 414c7b5baa29ffd46a0d05089657d33e, type: 3}
+  - {fileID: 513476870730275593, guid: 917e1373bf2bc1b42a8a44a4795b49f2, type: 3}
+  - {fileID: 513476870730275593, guid: 90e35e279799de547b9ce1ce0ae2d5b7, type: 3}
 --- !u!1 &914495041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,7 +2121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6103705171701696173, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.7200003
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 6103705171701696173, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2328,6 +2328,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4690954529858671295, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690954529858671295, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4690954530662837135, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
       propertyPath: m_Name
       value: Zemar
@@ -2384,5 +2392,14 @@ PrefabInstance:
       propertyPath: positionToAppearFromRightSide
       value: 
       objectReference: {fileID: 1923402093}
-    m_RemovedComponents: []
+    - target: {fileID: 4690954530662837139, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690954530662837139, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4690954529858671232, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}

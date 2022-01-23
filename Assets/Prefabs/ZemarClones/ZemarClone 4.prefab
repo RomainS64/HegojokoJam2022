@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 513476870730275606}
   - component: {fileID: 513476870730275594}
+  - component: {fileID: 1596657419101092699}
+  - component: {fileID: 2196103217257444367}
   m_Layer: 0
-  m_Name: ZemarClone
+  m_Name: ZemarClone 4
   m_TagString: Zemar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,6 +46,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2aad26f8d2733243a34d32d6fbf45ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 513476870841526240}
+--- !u!61 &1596657419101092699
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513476870730275593}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.041220903, y: -0.109922886}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0824418, y: 4.0228786}
+  m_EdgeRadius: 0
+--- !u!50 &2196103217257444367
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513476870730275593}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &513476870841526243
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +166,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8d0ecb4746535be44a3e11f05ddf8eaa, type: 3}
-  m_Color: {r: 0.91864955, g: 1, b: 0.6924528, a: 1}
+  m_Color: {r: 0.7445858, g: 1, b: 0.69411767, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -135,9 +185,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 513476871000121913}
-  - component: {fileID: 513476871000121862}
   m_Layer: 0
-  m_Name: ZemarCollision
+  m_Name: ZemarObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,29 +207,3 @@ Transform:
   m_Father: {fileID: 513476870730275606}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &513476871000121862
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513476871000121912}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.041220903, y: -0.109922886}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0824418, y: 4.0228786}
-  m_EdgeRadius: 0

@@ -22,6 +22,8 @@ public class Zemar : MonoBehaviour
     private float zemarSpeed;
 
     public event EventHandler OnBulletHitsEvent;
+    public event EventHandler OnEndNarutoAnimation;
+
     private bool isAmongClones;
 
     // Start is called before the first frame update
@@ -30,9 +32,9 @@ public class Zemar : MonoBehaviour
         animator = GetComponent<Animator>();
         player = FindObjectOfType<PlayerMouvements>();
 
-        pointToMoveOn = transform.position;
-        zemarSpeed = 0;
         transform.position = defaultPosition.position;
+        pointToMoveOn = defaultPosition.position;
+        zemarSpeed = 1;
 
         ToggleLevitateAnimation(true);
     }
@@ -60,7 +62,7 @@ public class Zemar : MonoBehaviour
 
     public void MoveAndTraversePlayer(float traversingMultiplier, float speed)
     {
-        pointToMoveOn = player.transform.position * traversingMultiplier;
+        pointToMoveOn = new Vector2(player.transform.position.x * traversingMultiplier, player.transform.position.y * traversingMultiplier);
         zemarSpeed = speed;
     }
     public void MoveToDefaultPosition(float speed = speedAppearFromRightSide)
@@ -109,5 +111,10 @@ public class Zemar : MonoBehaviour
                 Debug.Log("Oulala je prend des degats");
             }
         }
+    }
+
+    public void AnimatorKeyEvent_TriggerCloneSpawns()
+    {
+        if (OnEndNarutoAnimation != null) OnEndNarutoAnimation(this, EventArgs.Empty);
     }
 }

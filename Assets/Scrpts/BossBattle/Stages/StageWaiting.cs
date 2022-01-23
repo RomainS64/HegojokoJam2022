@@ -13,9 +13,9 @@ public class StageWaiting : Stage
     public override void OnStageStart()
     {
         zemar = FindObjectOfType<Zemar>();
+        zemar.Move(zemar.defaultPosition.position, 0);
         Debug.Log(zemar.canMakeDamage);
         zemar.canMakeDamage = false;
-        zemar.MoveToDefaultPosition();
 
         base.OnStageStart();
     }

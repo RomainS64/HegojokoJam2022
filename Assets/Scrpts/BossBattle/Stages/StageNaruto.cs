@@ -23,16 +23,20 @@ public class StageNaruto : Stage
     public Transform[] zemarCloneEndPosition;
     public GameObject[] zemarClonesPrefab;
 
+    private IEnumerator timerBeforeClonesMakeDamage;
+    private int numCloneOnScreen;
     public override void OnStageStart()
     {
         zemar.canMakeDamage = false;
         zemar.OnBulletHitsEvent += OnBulletHitsZemar_StageNaruto;
+        zemar.OnEndNarutoAnimation += OnEndNarutoAnimation_StageNaruto;
         zemar.ToggleLevitateAnimation(false);
 
         base.OnStageStart();
     }
     public override void OnStageEnd()
     {
+        numCloneOnScreen = 0;
         zemar.canMakeDamage = false;
         zemar.ToggleLevitateAnimation(true);
 
@@ -49,15 +53,13 @@ public class StageNaruto : Stage
         yield return new WaitForSeconds(durationBeforeDedoublement);
 
         zemar.TriggerDedoublementAnimation();
-        StartCoroutine(TimeBeforeSpawnClones());
+        //StartCoroutine(TimeBeforeSpawnClones());
     }
 
     private IEnumerator TimeBeforeSpawnClones()
     {
-        yield return new WaitForSeconds(durationBeforeSpawnClones);
-        SpawnZemarAndNarutoClonesAtRandomPoint();
-        zemar.SetIsAmongClones(true);
-        StartCoroutine(TimerBeforeClonesMakeDamage());
+        Debug.Log("proutcacabitecouille");
+        yield return new WaitForSeconds(0);
     }
 
     private IEnumerator TimerBeforeClonesMakeDamage()
@@ -70,6 +72,8 @@ public class StageNaruto : Stage
     {
         yield return new WaitForSeconds(durationBeforeZemarReappear);
         zemar.AppearFromRightSide();
+        zemar.ToggleLevitateAnimation(true);
+
         yield return new WaitForSeconds(durationBeforeEndOfStage);
         OnStageEnd();
     }
@@ -78,41 +82,60 @@ public class StageNaruto : Stage
     {
         yield return new WaitForSeconds(durationBeforeZemarReappear);
         zemar.MoveToDefaultPosition();
+        zemar.ToggleLevitateAnimation(true);
+
         yield return new WaitForSeconds(durationBeforeEndOfStage);
         OnStageEnd();
     }
 
     private void SpawnZemarAndNarutoClonesAtRandomPoint()
     {
-        List<Transform> transformList = new List<Transform>();
+        Debug.Log(numCloneOnScreen);
+        if (numCloneOnScreen >= 5) return;
 
-        //Random transform
-        foreach (var zemarCloneTransf in zemarCloneTransforms)
-        {
-            transformList.Add(zemarCloneTransf.transform);
-        }
+        List<int> indexAlreadyUsed = new List<int>();
 
         //SET ZEMAR POSITION
-        int randomZemarPositionIndex = UnityEngine.Random.Range(0, transformList.Count);
+        int randomZemarPositionIndex = UnityEngine.Random.Range(0, zemarCloneTransforms.Length);
 
-        zemar.transform.position = transformList[randomZemarPositionIndex].position;
-        zemar.Move(zemarCloneEndPosition[randomZemarPositionIndex].position, speedZemarNaruto);
+        zemar.transform.position = zemarCloneTransforms[randomZemarPositionIndex].position;
+        zemar.Move(zemarCloneEndPosition[randomZemarPositionIndex].position, speedZemarClones);
 
-        transformList.RemoveAt(randomZemarPositionIndex);
+        indexAlreadyUsed.Add(randomZemarPositionIndex);
+        //transformList.RemoveAt(randomZemarPositionIndex);
 
         //SET CLONE POSITION
-        for (int i = 0; i < transformList.Count; i++)
+        for (int i = 0; i < zemarCloneTransforms.Length - 1; i++)
         {
             GameObject zemarCloneInstance = Instantiate(zemarClonesPrefab[i]);
+            int randomClonePositionIndex;
+            bool isAlreadyUsed = false;
 
-            int randomClonePositionIndex = UnityEngine.Random.Range(0, transformList.Count);
+            do
+            {
+                isAlreadyUsed = false;
 
-            zemarCloneInstance.transform.position = transformList[randomZemarPositionIndex].position;
-            zemarCloneInstance.GetComponent<ZemarClone>().Move(zemarCloneEndPosition[randomZemarPositionIndex].position, speedZemarNaruto);
+                randomClonePositionIndex = UnityEngine.Random.Range(0, zemarCloneTransforms.Length);
+
+                foreach (int index in indexAlreadyUsed)
+                {
+                    if (index == randomClonePositionIndex)
+                    {
+                        isAlreadyUsed = true;
+                    }
+                }
+            } while (isAlreadyUsed);
+
+            zemarCloneInstance.transform.position = zemarCloneTransforms[randomClonePositionIndex].position;
+            zemarCloneInstance.GetComponent<ZemarClone>().Move(zemarCloneEndPosition[randomClonePositionIndex].position, speedZemarClones);
             zemarCloneInstance.GetComponent<ZemarClone>().OnBulletHitsEvent += OnBulletHitsClone_StageNaruto;
 
-            transformList.RemoveAt(randomZemarPositionIndex);
+            //transformList.RemoveAt(randomClonePositionIndex);
+            indexAlreadyUsed.Add(randomClonePositionIndex);
+
+            numCloneOnScreen++;
         }
+        Debug.Log("Wtf");
     }
 
     private IEnumerator DestroyAllClones()
@@ -133,7 +156,7 @@ public class StageNaruto : Stage
     }
     private void BulletHasHitClone()
     {
-        StopCoroutine(TimerBeforeClonesMakeDamage());
+        StopCoroutine(timerBeforeClonesMakeDamage);
         StartCoroutine(DestroyAllClones());
         zemar.SetIsAmongClones(false);
 
@@ -145,14 +168,22 @@ public class StageNaruto : Stage
 
     private void BulletHasHitZemar()
     {
-        StopCoroutine(TimerBeforeClonesMakeDamage());
+        StopCoroutine(timerBeforeClonesMakeDamage);
         StartCoroutine(DestroyAllClones());
         zemar.SetIsAmongClones(false);
 
-        zemar.MoveToDefaultPosition();
+        StartCoroutine(TimerBeforeResetZemarPosition());
     }
 
     // --------------------------- EVENTS ------------------------
+    private void OnEndNarutoAnimation_StageNaruto(object sender, EventArgs e)
+    {//
+        SpawnZemarAndNarutoClonesAtRandomPoint();
+        zemar.SetIsAmongClones(true);
+
+        timerBeforeClonesMakeDamage = TimerBeforeClonesMakeDamage();
+        StartCoroutine(timerBeforeClonesMakeDamage);
+    }
     private void OnBulletHitsClone_StageNaruto(object sender, EventArgs e)
     {
         BulletHasHitClone();
