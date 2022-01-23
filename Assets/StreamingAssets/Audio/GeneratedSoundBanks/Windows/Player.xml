@@ -8,12 +8,47 @@
 		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="2544936819">
+		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="1590439748">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1903876501" Name="playDmg" ObjectPath="\Events\Default Work Unit\playDmg" GUID="{964A5F27-9FD9-4B60-8249-133DCAFF460A}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1903876501" Name="playDmg" ObjectPath="\Events\Default Work Unit\playDmg" GUID="{964A5F27-9FD9-4B60-8249-133DCAFF460A}" DurationType="OneShot" DurationMin="0.285749" DurationMax="0.628986">
+					<IncludedMemoryFiles>
+						<File Id="205614228" Language="SFX">
+							<ShortName>poumNours\p2.wav</ShortName>
+							<Path>SFX\poumNours\p2_CF9F3675.wem</Path>
+						</File>
+						<File Id="281043171" Language="SFX">
+							<ShortName>poumNours\p6.wav</ShortName>
+							<Path>SFX\poumNours\p6_23A8380C.wem</Path>
+						</File>
+						<File Id="337423241" Language="SFX">
+							<ShortName>poumNours\p8.wav</ShortName>
+							<Path>SFX\poumNours\p8_703C6BA6.wem</Path>
+						</File>
+						<File Id="420302614" Language="SFX">
+							<ShortName>poumNours\p1.wav</ShortName>
+							<Path>SFX\poumNours\p1_20F19892.wem</Path>
+						</File>
+						<File Id="577086903" Language="SFX">
+							<ShortName>poumNours\p4.wav</ShortName>
+							<Path>SFX\poumNours\p4_440887B4.wem</Path>
+						</File>
+						<File Id="589048301" Language="SFX">
+							<ShortName>poumNours\p5.wav</ShortName>
+							<Path>SFX\poumNours\p5_1BA24831.wem</Path>
+						</File>
+						<File Id="607077797" Language="SFX">
+							<ShortName>poumNours\p3.wav</ShortName>
+							<Path>SFX\poumNours\p3_896326C5.wem</Path>
+						</File>
+						<File Id="1022995606" Language="SFX">
+							<ShortName>poumNours\p7.wav</ShortName>
+							<Path>SFX\poumNours\p7_5DFB4C5C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="138404804" Name="playGunSound" ObjectPath="\Events\Default Work Unit\playGunSound" GUID="{4F550D97-B308-4296-B184-14E8D5D41C2D}" DurationType="OneShot" DurationMin="0.404727" DurationMax="0.509924">
 					<IncludedMemoryFiles>
 						<File Id="999528939" Language="SFX">
