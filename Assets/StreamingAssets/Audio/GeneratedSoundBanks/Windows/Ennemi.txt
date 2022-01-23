@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	69483760	dmg2	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\dmg\dmg2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dmg\dmg2		65428
 	142054616	dmg1	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\dmg\dmg1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dmg\dmg1		65428
+	341779427	plane	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\plane_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\plane		736260
 	395857831	dmg3	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\dmg\dmg3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dmg\dmg3		65428
 	403386253	dmg5	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\dmg\dmg5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dmg\dmg5		67976
 	575151574	dmg4	F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\SFX\dmg\dmg4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dmg\dmg4		67128

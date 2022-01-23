@@ -443,7 +443,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 62fc83d0f83bd4489bbe0b1ae50dda40
     GuidInternal: 
-    m_lastTime: -8585587056876940947
+    m_lastTime: -8585586633533846388
     List:
     - name: playBisounoursDeath
       guid: 7b854b36857f364c8f1f631f7b062ef1
@@ -528,8 +528,8 @@ MonoBehaviour:
         guid: 5566933bc9fc844eaad1d8a987dbb4f7
       Path: Events\Default Work Unit\playPlane
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 5.197365
+      minDuration: 5.197365
     - name: playPunchline
       guid: c0a28bb4bae7ce42ae2c9c935dd9ac3b
       id: 3591998379
@@ -579,8 +579,8 @@ MonoBehaviour:
         guid: 657d35a95e68604a95068ebc13dc26b2
       Path: Events\Default Work Unit\playZemmarDmg
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.248507
+      minDuration: 0.221395
     - name: playZemmarLaugh
       guid: 9ab719cbb9ba9940a13675facf0b1d21
       id: 2304268690
@@ -596,8 +596,8 @@ MonoBehaviour:
         guid: 9ab719cbb9ba9940a13675facf0b1d21
       Path: Events\Default Work Unit\playZemmarLaugh
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 3.482558
+      minDuration: 1.505628
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -610,8 +610,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 5bba7829df308d47b07415a18ed9b42f
     GuidInternal: 
-    m_lastTime: -8585587478218887453
-    List: []
+    m_lastTime: -8585586633534066393
+    List:
+    - name: master
+      guid: 805a8d56aec7e949be5e9f626524a7b1
+      id: 4056684167
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5bba7829df308d47b07415a18ed9b42f
+      - ElementName: master
+        ObjectType: 13
+        guid: 805a8d56aec7e949be5e9f626524a7b1
+      Path: Game Parameters\Default Work Unit\master
   - PhysicalPath: Game Parameters\Factory Motion.wwu
     PathAndIcons:
     - ElementName: Game Parameters

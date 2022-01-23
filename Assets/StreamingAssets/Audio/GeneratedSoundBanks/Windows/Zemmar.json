@@ -16,7 +16,7 @@
     "Id": "144077205",
     "GUID": "{40200DD7-D46C-4A96-A216-66BE2DC0D470}",
     "Language": "SFX",
-    "Hash": "779281217",
+    "Hash": "3015544676",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Zemmar",
     "ShortName": "Zemmar",
     "Path": "Zemmar.bnk",
@@ -26,20 +26,52 @@
       "Name": "playZemmarDmg",
       "ObjectPath": "\\Events\\Default Work Unit\\playZemmarDmg",
       "GUID": "{A9357D65-685E-4A60-9506-8EBC13DC26B2}",
-      "MaxAttenuation": "0.",
       "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
+      "DurationMin": "0.221395",
+      "DurationMax": "0.248507",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "447867089",
+        "Language": "SFX",
+        "ShortName": "hit.wav",
+        "Path": "SFX\\hit_9E593462.wem"
+       }
+      ]
      },
      {
       "Id": "2304268690",
       "Name": "playZemmarLaugh",
       "ObjectPath": "\\Events\\Default Work Unit\\playZemmarLaugh",
       "GUID": "{CB19B79A-BAB9-4099-A136-75FACF0B1D21}",
-      "MaxAttenuation": "0.",
       "DurationType": "OneShot",
-      "DurationMin": "0.",
-      "DurationMax": "0."
+      "DurationMin": "1.505628",
+      "DurationMax": "3.482558",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "194592823",
+        "Language": "SFX",
+        "ShortName": "ZemarRire\\ZemmourRire1GoldVersion.wav",
+        "Path": "SFX\\ZemarRire\\ZemmourRire1GoldVersion_10C4C929.wem"
+       },
+       {
+        "Id": "329883274",
+        "Language": "SFX",
+        "ShortName": "ZemarRire\\ZemmourRire3GoldVersion.wav",
+        "Path": "SFX\\ZemarRire\\ZemmourRire3GoldVersion_10C4C929.wem"
+       },
+       {
+        "Id": "689286709",
+        "Language": "SFX",
+        "ShortName": "ZemarRire\\ZemmourRire2GoldVersion.wav",
+        "Path": "SFX\\ZemarRire\\ZemmourRire2GoldVersion_10C4C929.wem"
+       },
+       {
+        "Id": "723131885",
+        "Language": "SFX",
+        "ShortName": "ZemarRire\\ZemmourRire4GoldVersion.wav",
+        "Path": "SFX\\ZemarRire\\ZemmourRire4GoldVersion_10C4C929.wem"
+       }
+      ]
      }
     ]
    }

@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="692772953" GUID="{540281BB-D6A5-494F-86C0-4509CDDBF508}" Language="SFX" Hash="2229329850">
+		<SoundBank Id="692772953" GUID="{540281BB-D6A5-494F-86C0-4509CDDBF508}" Language="SFX" Hash="3893748040">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ennemi</ObjectPath>
 			<ShortName>Ennemi</ShortName>
 			<Path>Ennemi.bnk</Path>
@@ -49,7 +49,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3093616831" Name="playPlane" ObjectPath="\Events\Default Work Unit\playPlane" GUID="{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3093616831" Name="playPlane" ObjectPath="\Events\Default Work Unit\playPlane" GUID="{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}" DurationType="OneShot" DurationMin="5.197365" DurationMax="5.197365">
+					<IncludedMemoryFiles>
+						<File Id="341779427" Language="SFX">
+							<ShortName>plane.wav</ShortName>
+							<Path>SFX\plane_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

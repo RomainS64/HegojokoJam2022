@@ -2,7 +2,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	138404804	playGunSound			\Default Work Unit\playGunSound	
 	1903876501	playDmg			\Default Work Unit\playDmg	
 	2097335752	playWalk			\Default Work Unit\playWalk	
-	2840201783	playDeath			\Default Work Unit\playDeath	
 	3591998379	playPunchline			\Default Work Unit\playPunchline	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes

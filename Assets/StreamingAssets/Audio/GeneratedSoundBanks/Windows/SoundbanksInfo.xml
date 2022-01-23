@@ -11,16 +11,42 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="144077205" GUID="{40200DD7-D46C-4A96-A216-66BE2DC0D470}" Language="SFX">
+		<SoundBank Id="144077205" GUID="{40200DD7-D46C-4A96-A216-66BE2DC0D470}" Language="SFX" Hash="3015544676">
 			<ObjectPath>\SoundBanks\Default Work Unit\Zemmar</ObjectPath>
 			<ShortName>Zemmar</ShortName>
 			<Path>Zemmar.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3829630293" Name="playZemmarDmg" ObjectPath="\Events\Default Work Unit\playZemmarDmg" GUID="{A9357D65-685E-4A60-9506-8EBC13DC26B2}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2304268690" Name="playZemmarLaugh" ObjectPath="\Events\Default Work Unit\playZemmarLaugh" GUID="{CB19B79A-BAB9-4099-A136-75FACF0B1D21}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3829630293" Name="playZemmarDmg" ObjectPath="\Events\Default Work Unit\playZemmarDmg" GUID="{A9357D65-685E-4A60-9506-8EBC13DC26B2}" DurationType="OneShot" DurationMin="0.221395" DurationMax="0.248507">
+					<IncludedMemoryFiles>
+						<File Id="447867089" Language="SFX">
+							<ShortName>hit.wav</ShortName>
+							<Path>SFX\hit_9E593462.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2304268690" Name="playZemmarLaugh" ObjectPath="\Events\Default Work Unit\playZemmarLaugh" GUID="{CB19B79A-BAB9-4099-A136-75FACF0B1D21}" DurationType="OneShot" DurationMin="1.505628" DurationMax="3.482558">
+					<IncludedMemoryFiles>
+						<File Id="194592823" Language="SFX">
+							<ShortName>ZemarRire\ZemmourRire1GoldVersion.wav</ShortName>
+							<Path>SFX\ZemarRire\ZemmourRire1GoldVersion_10C4C929.wem</Path>
+						</File>
+						<File Id="329883274" Language="SFX">
+							<ShortName>ZemarRire\ZemmourRire3GoldVersion.wav</ShortName>
+							<Path>SFX\ZemarRire\ZemmourRire3GoldVersion_10C4C929.wem</Path>
+						</File>
+						<File Id="689286709" Language="SFX">
+							<ShortName>ZemarRire\ZemmourRire2GoldVersion.wav</ShortName>
+							<Path>SFX\ZemarRire\ZemmourRire2GoldVersion_10C4C929.wem</Path>
+						</File>
+						<File Id="723131885" Language="SFX">
+							<ShortName>ZemarRire\ZemmourRire4GoldVersion.wav</ShortName>
+							<Path>SFX\ZemarRire\ZemmourRire4GoldVersion_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="692772953" GUID="{540281BB-D6A5-494F-86C0-4509CDDBF508}" Language="SFX" Hash="2229329850">
+		<SoundBank Id="692772953" GUID="{540281BB-D6A5-494F-86C0-4509CDDBF508}" Language="SFX" Hash="3893748040">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ennemi</ObjectPath>
 			<ShortName>Ennemi</ShortName>
 			<Path>Ennemi.bnk</Path>
@@ -61,15 +87,21 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3093616831" Name="playPlane" ObjectPath="\Events\Default Work Unit\playPlane" GUID="{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3093616831" Name="playPlane" ObjectPath="\Events\Default Work Unit\playPlane" GUID="{3B936655-FCC9-4E84-AAD1-D8A987DBB4F7}" DurationType="OneShot" DurationMin="5.197365" DurationMax="5.197365">
+					<IncludedMemoryFiles>
+						<File Id="341779427" Language="SFX">
+							<ShortName>plane.wav</ShortName>
+							<Path>SFX\plane_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="3488054681">
+		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="2544936819">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2840201783" Name="playDeath" ObjectPath="\Events\Default Work Unit\playDeath" GUID="{5BA69027-8874-4256-A8D6-BC3E6A0C949D}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1903876501" Name="playDmg" ObjectPath="\Events\Default Work Unit\playDmg" GUID="{964A5F27-9FD9-4B60-8249-133DCAFF460A}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="138404804" Name="playGunSound" ObjectPath="\Events\Default Work Unit\playGunSound" GUID="{4F550D97-B308-4296-B184-14E8D5D41C2D}" DurationType="OneShot" DurationMin="0.404727" DurationMax="0.509924">
 					<IncludedMemoryFiles>
@@ -90,12 +122,12 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2691871305">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="3842981942">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" GUID="{B5E8FC2F-A85A-4F28-8388-0E98301AB755}" Language="SFX" Hash="886477457">
+		<SoundBank Id="1551306167" GUID="{B5E8FC2F-A85A-4F28-8388-0E98301AB755}" Language="SFX" Hash="2047956026">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
@@ -104,7 +136,7 @@
 					<IncludedMemoryFiles>
 						<File Id="647900629" Language="SFX">
 							<ShortName>button.wav</ShortName>
-							<Path>SFX\button_C34E0745.wem</Path>
+							<Path>SFX\button_AF8D8D97.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

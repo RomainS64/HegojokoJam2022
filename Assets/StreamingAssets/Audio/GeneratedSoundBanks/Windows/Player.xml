@@ -8,12 +8,11 @@
 		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="3488054681">
+		<SoundBank Id="1069431850" GUID="{9A3FD47A-39E4-4D02-A594-2643084AE054}" Language="SFX" Hash="2544936819">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2840201783" Name="playDeath" ObjectPath="\Events\Default Work Unit\playDeath" GUID="{5BA69027-8874-4256-A8D6-BC3E6A0C949D}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1903876501" Name="playDmg" ObjectPath="\Events\Default Work Unit\playDmg" GUID="{964A5F27-9FD9-4B60-8249-133DCAFF460A}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="138404804" Name="playGunSound" ObjectPath="\Events\Default Work Unit\playGunSound" GUID="{4F550D97-B308-4296-B184-14E8D5D41C2D}" DurationType="OneShot" DurationMin="0.404727" DurationMax="0.509924">
 					<IncludedMemoryFiles>
