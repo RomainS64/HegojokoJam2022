@@ -1142,6 +1142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollTime: 25
   deathBodyPrefab: {fileID: 8861360663676661833, guid: b6a082d8030153f47bcd197a233e57f9, type: 3}
+  T2: {fileID: 1694022098}
+  T3: {fileID: 792718315}
 --- !u!4 &1627109604
 Transform:
   m_ObjectHideFlags: 0

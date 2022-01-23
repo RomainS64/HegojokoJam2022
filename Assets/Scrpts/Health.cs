@@ -10,6 +10,11 @@ public class Health : MonoBehaviour
     public float maxHealth;
 
     public Slider healthBar;
+
+    public GameObject endCanvas,uiCanvas,fadeSprite;
+    public GameObject sleepingPlayerPrefab;
+    private PlayerMouvements player;
+    private bool isDead = false;
     public float CurrentHealth
     {
         get { return curHealth; }
@@ -18,9 +23,11 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = FindObjectOfType<PlayerMouvements>();
         curHealth = maxHealth;
         healthBar.value = curHealth;
-        healthBar.maxValue = maxHealth;
+        //healthBar.maxValue = maxHealth;
+
     }
 
     // Update is called once per frame
@@ -28,7 +35,7 @@ public class Health : MonoBehaviour
     {
         /*if (Input.GetKeyDown(KeyCode.Space))
         {
-            DamagePlayer(10);
+            DamaadagePlayer(10);
         }*/
     }
 
@@ -37,6 +44,22 @@ public class Health : MonoBehaviour
         curHealth -= damageValue;
 
         healthBar.value = curHealth;
+        if(curHealth <= 0 && !isDead)
+        {
+            isDead = true;
+            gameObject.SetActive(false);
+            player.GetComponent<SpriteRenderer>().enabled = false;
+            uiCanvas.SetActive(false);
+            endCanvas.SetActive(true);
+            fadeSprite.SetActive(true);
+            fadeSprite.GetComponentInParent<Scroller>().StopScrolling();
+            GameObject sleepingPlayer = Instantiate(sleepingPlayerPrefab);
+            sleepingPlayer.transform.position = new Vector3(
+                player.transform.position.x,
+                player.transform.position.y,
+                -9);
+
+        }
 
     }
    
