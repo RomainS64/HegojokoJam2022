@@ -60,6 +60,10 @@ public class Health : MonoBehaviour
                 -9);
 
         }
+        else
+        {
+            AkSoundEngine.PostEvent("playDmg", gameObject);
+        }
 
     }
    

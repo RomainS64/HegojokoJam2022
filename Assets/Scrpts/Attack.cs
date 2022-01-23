@@ -12,13 +12,15 @@ public class Attack : MonoBehaviour
     {
         if(collision.tag == "Player" && !hasAttack)
         {
-         
             hasAttack = true;
 
             if (enemy != null)
             {
                 if (enemy.isDead) return;
+
                 enemy.Attack();
+                Debug.Log("Proutoui");
+
             }
             FindObjectOfType<Health>().DamagePlayer(damages);
             FindObjectOfType<PlayerMouvements>().GetHit(transform.parent.position);

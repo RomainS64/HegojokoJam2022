@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
     public SpriteRenderer spriteRenderer,spriteDesYeux;
     public EveryNounoursColors everyNounoursColors;
     public Animator animator;
+    public Collider2D colliderNounours;
 
     private IEnumerator followRoutine;
 
@@ -26,10 +27,16 @@ public class Enemy : MonoBehaviour
     {
         if (isDead) return;
 
-        StopCoroutine(followRoutine);
+        if(followRoutine != null)
+        {
+            StopCoroutine(followRoutine);
+        }
 
-        animator.SetTrigger("Attack");
-        Invoke(nameof(StartRoutine), 4f);
+        if (!isFlying)
+        {
+            animator.SetTrigger("Attack");
+            Invoke(nameof(StartRoutine), 4f);
+        }
     }
     private void StartRoutine()
     {
@@ -44,7 +51,11 @@ public class Enemy : MonoBehaviour
 
        target = GameObject.FindGameObjectWithTag(tagTarget).transform;
        SetRandomSpriteColor();
-       StartRoutine();
+        if(!isFlying)
+        {
+            StartRoutine();
+        }
+
     }
     IEnumerator FollowTarget()
     {
@@ -69,10 +80,15 @@ public class Enemy : MonoBehaviour
     {
         EndPreparation.AddKill(transform.position, isFlying);
 
+        if(isFlying)
+        {
+            GetComponent<ParachuteMovement>().isSleeping = true;
+        }
+
         isDead = true;
         animator.SetTrigger("Sleep");
         gameObject.tag = "NounoursMort";
-        GetComponent<BoxCollider2D>().enabled = false;
+        colliderNounours.enabled = false;
         if(followRoutine != null)StopCoroutine(followRoutine);
         Invoke(nameof(SetStatic), 2f);
     }

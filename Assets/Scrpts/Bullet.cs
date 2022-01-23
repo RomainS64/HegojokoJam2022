@@ -34,7 +34,16 @@ public class Bullet : MonoBehaviour
             GameObject newBulle = Instantiate(bulles);
             newBulle.transform.position = transform.position+new Vector3(0,0,-1);
 
-            collision.gameObject.GetComponent<Enemy>().Kill();
+            Enemy enemyRef;
+            if (collision.gameObject.TryGetComponent<Enemy>(out enemyRef))
+            {
+                enemyRef.Kill();
+            }
+            else
+            {
+                collision.gameObject.GetComponentInParent<Enemy>().Kill();
+            }
+
             Destroy(gameObject);
         }
     }
