@@ -924,7 +924,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stages:
   - {fileID: 375131575}
+  - {fileID: 544640614}
+  - {fileID: 375131575}
   - {fileID: 1709217891}
+  - {fileID: 375131575}
+  - {fileID: 888564261}
+  - {fileID: 375131575}
+  - {fileID: 1420618034}
 --- !u!1 &374039628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,9 +1515,9 @@ MonoBehaviour:
   transformPointsLeft:
   - {fileID: 1203619884}
   - {fileID: 1210976535}
-  mixMaxNumDeplacement: {x: 3, y: 4}
-  speedZemarDeplacement: 0.8
-  durationToNextDeplacement: 5
+  mixMaxNumDeplacement: {x: 2, y: 4}
+  speedZemarDeplacement: 0.3
+  durationToNextDeplacement: 7
 --- !u!1 &598531791
 GameObject:
   m_ObjectHideFlags: 0
@@ -4154,12 +4160,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 693152053}
     - target: {fileID: 4690954530662837137, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: currentDamageToPlayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690954530662837137, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
       propertyPath: positionToAppearFromRightSide
       value: 
       objectReference: {fileID: 1923402093}
     - target: {fileID: 4690954530752845670, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690954530752845670, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb8899c43ddf6948b5a7379ce438c54, type: 3}
