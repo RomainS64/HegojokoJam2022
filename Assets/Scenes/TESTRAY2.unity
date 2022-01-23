@@ -276,6 +276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6103705171701696162, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6103705171701696173, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -290,7 +294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6103705171701696173, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6103705171701696173, guid: c3b7764a02a7f46468d79869c90c700a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -361,7 +365,7 @@ Animator:
   m_GameObject: {fileID: 1068232617}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: db23f5a5c598bd5469a89567baf299ab, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

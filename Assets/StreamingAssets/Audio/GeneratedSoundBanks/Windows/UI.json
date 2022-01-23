@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\",
+   "SourceFilesRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\.cache\\Windows\\",
+   "SoundBanksRoot": "F:\\devJeux\\HegoJokoWinterJam\\ZemmarEtLeGatoAlaFraiz\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1551306167",
+    "GUID": "{B5E8FC2F-A85A-4F28-8388-0E98301AB755}",
+    "Language": "SFX",
+    "Hash": "886477457",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI",
+    "ShortName": "UI",
+    "Path": "UI.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1843531235",
+      "Name": "playButton",
+      "ObjectPath": "\\Events\\Default Work Unit\\playButton",
+      "GUID": "{BFC971D7-3BFD-4346-8B00-AAF291529611}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.401916",
+      "DurationMax": "0.401916",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "647900629",
+        "Language": "SFX",
+        "ShortName": "button.wav",
+        "Path": "SFX\\button_C34E0745.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

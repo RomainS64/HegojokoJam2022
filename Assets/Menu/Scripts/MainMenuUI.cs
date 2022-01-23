@@ -49,6 +49,6 @@ public class MainMenuUI : MonoBehaviour
 
     private void PlayButtonSound()
     {
-        //AudioManager.instance.PlayOneShot("UI_button");
+        AkSoundEngine.PostEvent("playButton", gameObject);
     }
 }

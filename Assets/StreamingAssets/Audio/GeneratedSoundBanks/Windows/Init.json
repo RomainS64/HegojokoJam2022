@@ -1,0 +1,26 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\",
+   "SourceFilesRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\.cache\\Windows\\",
+   "SoundBanksRoot": "F:\\devJeux\\HegoJokoWinterJam\\ZemmarEtLeGatoAlaFraiz\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "F:\\devJeux\\HegoJokoWinterJam\\WwiseProjectZemmar\\SonZemmar\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "2691871305",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   }
+  ]
+ }
+}

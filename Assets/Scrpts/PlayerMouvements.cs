@@ -14,14 +14,40 @@ public class PlayerMouvements : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator animator;
     private SpriteRenderer spriteFeet;
+    private bool hitInvulnerable = false;
+    private Vector2  projection= Vector2.zero;
     private void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         camera = FindObjectOfType<Camera>();
         sprite = GetComponent<SpriteRenderer>();
         animator = feet.GetComponent<Animator>();
         spriteFeet = feet.GetComponent<SpriteRenderer>();
     }
+    public void GetHit(Vector3 position)
+    {
+        if (hitInvulnerable) return;
+        hitInvulnerable = true;
+        FindObjectOfType<PlayerMouvements>().GetHit(transform.parent.position);
+        Debug.Log("Yo");
+        if (position.x > transform.position.x)
+        {
+            projection = new Vector2(-8f,0f);
+        }
+        else
+        {
+            projection = new Vector2(8f,0);
+        }
+
+        Invoke(nameof(EndHit), 0.25f);
+    }
+    private void EndHit()
+    {
+        hitInvulnerable = false;
+        projection = Vector2.zero;
+    }
+
     private void Update()
     {
 
@@ -52,11 +78,11 @@ public class PlayerMouvements : MonoBehaviour
             vertical = 0;
         }
         Vector2 newVelocity = new Vector2(horizontal*speedX,vertical*speedY);
-        rb.velocity = newVelocity;
+        rb.velocity = newVelocity+projection;
         if (rb.velocity.x != 0 || rb.velocity.y != 0)
         {
+            AkSoundEngine.PostEvent("playWalk", gameObject);
             animator.SetBool("isMoving", true);
-            Debug.Log($"Velocité : {rb.velocity}");
             if (rb.velocity.x > 0)
             {
                 spriteFeet.flipX = false;

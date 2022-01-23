@@ -6,9 +6,10 @@ public class Bullet : MonoBehaviour
 {
 
     [SerializeField] private float speed;
+    [SerializeField] private GameObject bulles;
     public void ShootBullet(Vector3 position, Quaternion rotation, Vector3 dir)
     {
-        
+        AkSoundEngine.PostEvent("playGunSound", gameObject);
         Debug.Log("Rotation : " + rotation);
         transform.position = position;
         transform.rotation = rotation;
@@ -30,6 +31,9 @@ public class Bullet : MonoBehaviour
     {
         if(collision.tag == "Nounours")
         {
+            GameObject newBulle = Instantiate(bulles);
+            newBulle.transform.position = transform.position+new Vector3(0,0,-1);
+
             collision.gameObject.GetComponent<Enemy>().Kill();
             Destroy(gameObject);
         }

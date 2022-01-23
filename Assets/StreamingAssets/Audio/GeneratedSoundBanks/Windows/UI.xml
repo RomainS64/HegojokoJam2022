@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\</ProjectRoot>
+		<SourceFilesRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\devJeux\HegoJokoWinterJam\ZemmarEtLeGatoAlaFraiz\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\devJeux\HegoJokoWinterJam\WwiseProjectZemmar\SonZemmar\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="1551306167" GUID="{B5E8FC2F-A85A-4F28-8388-0E98301AB755}" Language="SFX" Hash="886477457">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1843531235" Name="playButton" ObjectPath="\Events\Default Work Unit\playButton" GUID="{BFC971D7-3BFD-4346-8B00-AAF291529611}" DurationType="OneShot" DurationMin="0.401916" DurationMax="0.401916">
+					<IncludedMemoryFiles>
+						<File Id="647900629" Language="SFX">
+							<ShortName>button.wav</ShortName>
+							<Path>SFX\button_C34E0745.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
