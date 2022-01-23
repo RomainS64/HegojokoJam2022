@@ -25,15 +25,15 @@ public class EndFade : MonoBehaviour
     }
     IEnumerator Fade()
     {
-        yield return new WaitForSeconds(timeBeforeFade);
+        yield return new WaitForSecondsRealtime(timeBeforeFade);
         fadeCanvas.SetActive(true);
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSecondsRealtime(0.2f);
         FindObjectOfType<MoveManager>().StopMove();
 
-        yield return new WaitForSeconds(timeBeforeEndSound);
+        yield return new WaitForSecondsRealtime(timeBeforeEndSound);
         endSound.Play();
-        yield return new WaitForSeconds(5f-timeBeforeEndSound);
+        yield return new WaitForSecondsRealtime(5f-timeBeforeEndSound);
         SceneManager.LoadScene(sceneToLoad);
     }
 }

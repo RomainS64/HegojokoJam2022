@@ -21,17 +21,17 @@ public class GreMove : MonoBehaviour
         for(int i=0;i<100;i++)
         {
             transform.position += new Vector3(-speed*(moveTime/100), 0, 0);
-            yield return new WaitForSeconds(moveTime / 100);
+            yield return new WaitForSecondsRealtime(moveTime / 100);
         }
         isReadyToBeAtomized = true;
-        yield return new WaitForSeconds(stopTime/2);
+        yield return new WaitForSecondsRealtime(stopTime/2);
         switchRound--;
         if(switchRound == 0)
         {
             robot.SetActive(false);
             chair.SetActive(true);
         }
-        yield return new WaitForSeconds(stopTime/2);
+        yield return new WaitForSecondsRealtime(stopTime/2);
         isReady = true;
     }
 

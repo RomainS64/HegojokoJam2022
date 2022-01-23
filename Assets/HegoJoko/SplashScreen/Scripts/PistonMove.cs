@@ -17,15 +17,15 @@ public class PistonMove : MonoBehaviour
         {
             //MoveDown
             transform.position += new Vector3(0, -speed *(downTime/100), 0);
-            yield return new WaitForSeconds(downTime/100);
+            yield return new WaitForSecondsRealtime(downTime/100);
         }
         yield return new WaitForSeconds(stopTime);
         for (int i = 0; i < 100; i++)
         {
             //MoveUp
             transform.position += new Vector3(0,speed * (upTime/ 100), 0);
-            yield return new WaitForSeconds(upTime/100);
+            yield return new WaitForSecondsRealtime(upTime/100);
         }
-        yield return new WaitForSeconds(endTime);
+        yield return new WaitForSecondsRealtime(endTime);
     }
 }
