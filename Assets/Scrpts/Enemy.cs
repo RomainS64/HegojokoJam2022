@@ -25,7 +25,9 @@ public class Enemy : MonoBehaviour
     public void Attack()
     {
         if (isDead) return;
+
         StopCoroutine(followRoutine);
+
         animator.SetTrigger("Attack");
         Invoke(nameof(StartRoutine), 4f);
     }
@@ -41,7 +43,7 @@ public class Enemy : MonoBehaviour
     {
        target = GameObject.FindGameObjectWithTag(tagTarget).transform;
        SetRandomSpriteColor();
-        StartRoutine();
+       StartRoutine();
     }
     IEnumerator FollowTarget()
     {
