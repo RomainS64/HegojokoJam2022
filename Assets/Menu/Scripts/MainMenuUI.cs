@@ -20,8 +20,9 @@ public class MainMenuUI : MonoBehaviour
     public void PlayGame()
     {
         PlayButtonSound();
-        fade.SetActive(true);
-        Invoke(nameof(PlayGameDelay), 1f);
+        SceneManager.LoadScene(2);
+        //fade.SetActive(true);
+        //Invoke(nameof(PlayGameDelay), 1f);
     }
     public void PlayGameDelay()
     {
