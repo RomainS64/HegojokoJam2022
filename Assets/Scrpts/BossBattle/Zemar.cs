@@ -160,6 +160,11 @@ public class Zemar : MonoBehaviour
     {
         animator.SetBool("isLevingBras", isLevingBras);
     }
+
+    public void ToggleIsAmongClonse(bool isAmongClones)
+    {
+        animator.SetBool("isAmongClones", isAmongClones);
+    }
     private void Death()
     {
         FindObjectOfType<ScreenShake>().Shake(0.3f, 1.5f);

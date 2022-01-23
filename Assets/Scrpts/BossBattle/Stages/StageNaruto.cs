@@ -168,6 +168,8 @@ public class StageNaruto : Stage
 
         StartCoroutine(DestroyAllClones());
         zemar.SetIsAmongClones(false);
+        zemar.ToggleIsAmongClonse(false);
+
 
         zemar.canMakeDamage = true;
         zemar.MoveAndTraversePlayer(traversingMultiplier, speedZemarTraversingPlayer);
@@ -182,6 +184,7 @@ public class StageNaruto : Stage
         if(timerBeforeClonesMakeDamage!=null) StopCoroutine(timerBeforeClonesMakeDamage);
         StartCoroutine(DestroyAllClones());
         zemar.SetIsAmongClones(false);
+        zemar.ToggleIsAmongClonse(false);
 
         StartCoroutine(TimerBeforeResetZemarPosition());
     }
@@ -191,6 +194,8 @@ public class StageNaruto : Stage
     {
         SpawnZemarAndNarutoClonesAtRandomPoint();
         zemar.SetIsAmongClones(true);
+        zemar.ToggleIsAmongClonse(true);
+
 
         timerBeforeClonesMakeDamage = TimerBeforeClonesMakeDamage();
         StartCoroutine(timerBeforeClonesMakeDamage);
