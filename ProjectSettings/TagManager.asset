@@ -7,6 +7,7 @@ TagManager:
   - Nounours
   - Zemar
   - NounoursMort
+  - NounoursAttackZone
   layers:
   - Default
   - TransparentFX

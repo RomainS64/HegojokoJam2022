@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
 
     //TODO  : C'EST LE TRUC QUI DEFINI SI LE NOUNOURS VOLE OU PAS
     public bool isFlying = false;
-
+    public bool isDead = false;
     public float speed;
     public float timeBetweenAttacks;
     public int damage;
@@ -23,13 +23,15 @@ public class Enemy : MonoBehaviour
     private IEnumerator followRoutine;
 
     public void Attack()
-    {   
+    {
+        if (isDead) return;
         StopCoroutine(followRoutine);
         animator.SetTrigger("Attack");
-        Invoke(nameof(StartRoutine), 1f);
+        Invoke(nameof(StartRoutine), 4f);
     }
     private void StartRoutine()
     {
+        if (isDead) return;
         followRoutine = FollowTarget();
         StartCoroutine(followRoutine);
     }
@@ -62,10 +64,11 @@ public class Enemy : MonoBehaviour
     }
     public void Kill()
     {
+        isDead = true;
         animator.SetTrigger("Sleep");
         gameObject.tag = "NounoursMort";
         GetComponent<BoxCollider2D>().enabled = false;
-        StopCoroutine(followRoutine);
+        if(followRoutine != null)StopCoroutine(followRoutine);
         Invoke(nameof(SetStatic), 2f);
     }
     private void SetStatic()
